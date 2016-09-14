@@ -1,0 +1,1490 @@
+@charset "UTF-8";
+/*栅格*/
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+}
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+.col-xs-pull-12 {
+  right: 100%;
+}
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.col-xs-pull-9 {
+  right: 75%;
+}
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.col-xs-pull-6 {
+  right: 50%;
+}
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.col-xs-pull-3 {
+  right: 25%;
+}
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.col-xs-pull-0 {
+  right: auto;
+}
+.col-xs-push-12 {
+  left: 100%;
+}
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+.col-xs-push-9 {
+  left: 75%;
+}
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+.col-xs-push-6 {
+  left: 50%;
+}
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+.col-xs-push-3 {
+  left: 25%;
+}
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+.col-xs-push-0 {
+  left: auto;
+}
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+.col-xs-offset-0 {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .col-sm-push-0 {
+    left: auto;
+  }
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-sm-offset-0 {
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-md-pull-0 {
+    right: auto;
+  }
+  .col-md-push-12 {
+    left: 100%;
+  }
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .col-md-push-9 {
+    left: 75%;
+  }
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .col-md-push-6 {
+    left: 50%;
+  }
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .col-md-push-3 {
+    left: 25%;
+  }
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .col-md-push-0 {
+    left: auto;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .col-lg-push-0 {
+    left: auto;
+  }
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-lg-offset-0 {
+    margin-left: 0;
+  }
+}
+/*a{
+  color: #666666;
+  text-decoration: none;
+}*/
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+/*img{
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.fl{
+  float: left;
+  display: inline;
+}
+
+.yahei{
+  font-family: "Microsoft YaHei", sans-serif;
+}*/
+.noborder {
+  border: none !important;
+}
+.blue,
+a.blue {
+  color: #0b73bb;
+}
+.color_666 {
+  color: #666;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mb10 {
+  margin-bottom: 10px !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.mr10 {
+  margin-right: 10px !important;
+}
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: 16px;
+}
+.pl5 {
+  padding-left: 5px;
+}
+.pr5 {
+  padding-right: 5px;
+}
+.minw80 {
+  min-width: 80px;
+}
+.text-bottom {
+  vertical-align: text-bottom;
+}
+.text-right {
+  text-align: right;
+}
+/* payorder */
+.payorder-main {
+  padding: 0 65px;
+}
+.recharge-wrap .control-label {
+  width: auto;
+  font-size: 14px;
+}
+/*金额*/
+.money-span {
+  color: #ff9400;
+}
+.loading-wx-span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: 'microsoft yahei';
+}
+.user-account {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+  margin: 10px 0;
+}
+/* tab */
+.tab-nav {
+  display: inline-block;
+  width: 100px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.payorder-detail-table {
+  width: 100%;
+  color: #333333;
+  border: 1px solid #ccc;
+}
+.payorder-detail-table th {
+  color: #585858;
+  font-size: 14px;
+  background: #f0f0f0;
+  text-align: left;
+  padding: 7px 0;
+}
+.payorder-detail-table td {
+  font-size: 12px;
+  padding: 8px 0;
+}
+.payorder-detail-table th:first-child,
+.payorder-detail-table td:first-child {
+  padding-left: 20px;
+}
+/* table */
+/*end*/
+#coupon-wrap label,
+#balance-wrap label {
+  display: inline-block;
+}
+.payorder-choseother {
+  position: relative;
+  left: -15px;
+  color: #00a0e9;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.payorder-choseother:before {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #00a0e9 transparent transparent;
+}
+.payorder-choseother:before:hover {
+  border-top-color: #f80;
+}
+.payorder-choseother:before.expand {
+  border-color: transparent transparent #00a0e9;
+}
+.payorder-choseother:before.expand:hover {
+  border-bottom-color: #f80;
+}
+.itt {
+  margin-bottom: 0;
+  padding-left: 10px;
+  margin-top: 0;
+}
+.pay-btn-wrap {
+  text-align: center;
+  overflow: hidden;
+  margin: 50px 0;
+}
+.payorder-tab-navs {
+  padding-bottom: 10px;
+}
+.payorder-tab-navs .tab-nav {
+  position: relative;
+}
+.payorder-tab-navs .tab-nav.current {
+  color: #f80;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.payorder-tab-navs .tab-nav.current:before {
+  content: "";
+  display: inline-block;
+  left: 40%;
+  bottom: -11px;
+  width: 0;
+  height: 0;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #ff9400 transparent;
+  font-size: 0;
+  line-height: 0;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
+  -ms-transition: -ms-transform 0.5s ease;
+  transition: transform .5s ease;
+  -webkit-transform-origin: 50% 20%;
+  position: absolute;
+}
+.payorder-tab-content {
+  border: 3px solid #ff9400;
+  padding: 15px;
+  display: none;
+  visibility: hidden;
+}
+.payorder-tab-content.current {
+  display: block;
+  visibility: visible;
+}
+.payorder-tab-content .paybank-logo-ul {
+  padding: 0;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: -60px;
+}
+.payorder-tab-content .paybank-logo-ul.expand {
+  height: auto;
+}
+.payorder-tab-content .paybank-logo-list {
+  float: left;
+  overflow: hidden;
+  list-style: none;
+  margin: 10px 45px 14px 0px;
+  cursor: pointer;
+}
+.payorder-tab-content .paybank-logo-label {
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.payorder-tab-content .pay-channel-radio {
+  vertical-align: top;
+  margin: 10px 5px 0 0;
+}
+.payorder-tab-content .bank-logo {
+  display: inline-block;
+  overflow: hidden;
+  height: 33px;
+  width: 110px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.payorder-tab-content .bank-jdpay,
+.payorder-tab-content .bank-visa,
+.payorder-tab-content .bank-union,
+.payorder-tab-content .bank-SPDB,
+.payorder-tab-content .bank-SPABANK,
+.payorder-tab-content .bank-SHRCC,
+.payorder-tab-content .bank-CMB,
+.payorder-tab-content .bank-SDB,
+.payorder-tab-content .bank-PSBC,
+.payorder-tab-content .bank-NBBANK,
+.payorder-tab-content .bank-ICBC,
+.payorder-tab-content .bank-HZCBB2C,
+.payorder-tab-content .bank-GDB,
+.payorder-tab-content .bank-FDB,
+.payorder-tab-content .bank-CZB,
+.payorder-tab-content .bank-CQRCB,
+.payorder-tab-content .bank-CMBC,
+.payorder-tab-content .bank-CIB,
+.payorder-tab-content .bank-CEB,
+.payorder-tab-content .bank-CCB,
+.payorder-tab-content .bank-CITIC,
+.payorder-tab-content .bank-CBHB,
+.payorder-tab-content .bank-BOC,
+.payorder-tab-content .bank-BOCB2C,
+.payorder-tab-content .bank-BIRCB,
+.payorder-tab-content .bank-BEA,
+.payorder-tab-content .bank-ABC,
+.payorder-tab-content .bank-alipay,
+.payorder-tab-content .bank-COMM,
+.payorder-tab-content .bank-ICBCB2C,
+.payorder-tab-content .bank-SPDBB2C,
+.payorder-tab-content .bank-CCBB2C,
+.payorder-tab-content .bank-ABCB2C,
+.payorder-tab-content .bank-weixin {
+  background-position: 3px 7px;
+  line-height: 999px;
+}
+.payorder-tab-content .bank-jdpay {
+  background-image: url(../img/banks/bank-jdpay.png);
+}
+.payorder-tab-content .bank-visa {
+  background-image: url(../img/banks/bank-visa.png);
+}
+.payorder-tab-content .bank-union {
+  background-image: url(../img/banks/bank-union.png);
+}
+.payorder-tab-content .bank-weixin {
+  background-image: url(../img/banks/bank-weixin.png);
+}
+.payorder-tab-content .bank-SPDB {
+  background-image: url(../img/banks/bank-SPDB.png);
+}
+.payorder-tab-content .bank-SPDBB2C {
+  background-image: url(../img/banks/bank-SPDBB2C.png);
+}
+.payorder-tab-content .bank-SPABANK {
+  background-image: url(../img/banks/bank-SPABANK.png);
+}
+.payorder-tab-content .bank-SHRCC {
+  background-image: url(../img/banks/bank-SHRCC.png);
+}
+.payorder-tab-content .bank-CMB {
+  background-image: url(../img/banks/bank-CMB.png);
+}
+.payorder-tab-content .bank-SDB {
+  background-image: url(../img/banks/bank-SDB.png);
+}
+.payorder-tab-content .bank-PSBC {
+  background-image: url(../img/banks/bank-PSBC.png);
+}
+.payorder-tab-content .bank-NBBANK {
+  background-image: url(../img/banks/bank-NBBANK.png);
+}
+.payorder-tab-content .bank-ICBC {
+  background-image: url(../img/banks/bank-ICBC.png);
+}
+.payorder-tab-content .bank-ICBCB2C {
+  background-image: url(../img/banks/bank-ICBC.png);
+}
+.payorder-tab-content .bank-HZCBB2C {
+  background-image: url(../img/banks/bank-HZCBB2C.png);
+}
+.payorder-tab-content .bank-GDB {
+  background-image: url(../img/banks/bank-GDB.png);
+}
+.payorder-tab-content .bank-FDB {
+  background-image: url(../img/banks/bank-FDB.png);
+}
+.payorder-tab-content .bank-CZB {
+  background-image: url(../img/banks/bank-CZB.png);
+}
+.payorder-tab-content .bank-CQRCB {
+  background-image: url(../img/banks/bank-CQRCB.png);
+}
+.payorder-tab-content .bank-CMBC {
+  background-image: url(../img/banks/bank-CMBC.png);
+}
+.payorder-tab-content .bank-CIB {
+  background-image: url(../img/banks/bank-CIB.png);
+}
+.payorder-tab-content .bank-CEB {
+  background-image: url(../img/banks/bank-CEB.png);
+}
+.payorder-tab-content .bank-CCB {
+  background-image: url(../img/banks/bank-CCB.png);
+}
+.payorder-tab-content .bank-CCBB2C {
+  background-image: url(../img/banks/bank-CCBB2C.png);
+}
+.payorder-tab-content .bank-CITIC {
+  background-image: url(../img/banks/bank-CITIC.png);
+}
+.payorder-tab-content .bank-CBHB {
+  background-image: url(../img/banks/bank-CBHB.png);
+}
+.payorder-tab-content .bank-BOC {
+  background-image: url(../img/banks/bank-BOC.png);
+}
+.payorder-tab-content .bank-BOCB2C {
+  background-image: url(../img/banks/bank-BOC.png);
+}
+.payorder-tab-content .bank-BIRCB {
+  background-image: url(../img/banks/bank-BIRCB.png);
+}
+.payorder-tab-content .bank-BEA {
+  background-image: url(../img/banks/bank-BEA.png);
+}
+.payorder-tab-content .bank-alipay {
+  background-image: url(../img/banks/bank-alipay.png);
+}
+.payorder-tab-content .bank-ABC {
+  background-image: url(../img/banks/bank-ABC.png);
+}
+.payorder-tab-content .bank-ABCB2C {
+  background-image: url(../img/banks/bank-ABCB2C.png);
+}
+.payorder-tab-content .bank-COMM {
+  background-image: url(../img/banks/bank-COMM.png);
+}
+.payorder-tab-content .J_send-bank-info {
+  display: none;
+  text-align: left;
+}
+.payorder-tab-content .J_send-bank-info em {
+  background: url(http://cms.zbjimg.com/task/letter.png) no-repeat left center;
+  height: 16px;
+  vertical-align: -4px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.payorder-tab-content .payorder-app-qrcode {
+  display: block;
+  margin-top: 100px;
+}
+.hunk .counter > p {
+  margin: 0 0 3px 0;
+}
+.ui-dialog-paying-tips {
+  color: #999;
+}
+.amount-title {
+  width: 115px;
+  display: inline-block;
+  text-align: right;
+}
+.payment-check-loading {
+  display: none;
+  color: #666;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.pay-coupon-select {
+  margin: 0 0 5px 0px;
+}
+.send-bank-info-wrap {
+  margin-bottom: 0;
+}
+.send-bank-info-wrap .action-section {
+  width: 225px;
+}
+.send-bank-info-wrap .action-section .send-bank-info-mobile {
+  width: 145px;
+}
+.send-bank-info-wrap .action-section .captcha-code {
+  width: 60px;
+}
+.send-bank-info-wrap .action-section .send-bank-info-captcha {
+  cursor: pointer;
+}
+.send-bank-info-wrap .content-section {
+  width: 185px;
+  height: 210px;
+  background: #fcfcfc;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-left: 5px;
+}
+.pay-btn-coupon-wrap {
+  margin-top: 5px;
+}
+.ebank-content-wrap {
+  margin-bottom: 0;
+}
+.balance-pay-form {
+  margin-bottom: 0;
+}
+.ui-btn-loading[disabled],
+.ui-btn-loading[disabled]:active,
+.ui-btn-loading[disabled]:hover,
+.ui-btn-loading[disabled]:focus,
+.ui-btn-loading[disabled]:visited {
+  border-color: transparent;
+  cursor: not-allowed;
+  padding-left: 30px;
+  background: #999 url(../img/loading.gif) no-repeat 10px;
+}
+.ui-dialog-wx-pay {
+  width: 550px;
+}
+.ui-dialog-wx-pay .ui-dialog-footer {
+  display: none;
+}
+.wx-pay-wrap {
+  text-align: center;
+}
+.wx-hd {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.wx-bd {
+  margin-top: 0;
+}
+.wx-order-info {
+  margin: 0 20px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #CCC;
+  line-height: 2;
+  font-size: 14px;
+  list-style: none;
+  text-align: left;
+}
+.wx-order-info li {
+  margin: 0;
+  padding: 0;
+}
+.wx-content-box {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.wx-price {
+  font-size: 21px;
+  color: #e12228;
+}
+.wx-price i {
+  margin-right: 3px;
+  font-size: 12px;
+  font-family: "arial";
+  font-style: normal;
+}
+.arrow-left {
+  font-style: normal;
+  font-family: "arial";
+}
+.wx-other-action {
+  margin-top: 0px;
+}
+.pc-wrap {
+  color: #666;
+}
+.pc-wrap:hover {
+  color: #333;
+  text-decoration: none;
+}
+.coupon-area {
+  height: 48px;
+  line-height: 48px;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  border-radius: 4px 4px 4px 4px;
+  margin-bottom: 5px;
+  padding: 0 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  position: relative;
+  _zoom: 1;
+  z-index: 1;
+}
+.coupon-area .coupon-content,
+.coupon-area .code-input {
+  position: relative;
+}
+.coupon-area .coupon-content input[type=text],
+.coupon-area .code-input input[type=text],
+.coupon-area .coupon-content select,
+.coupon-area .code-input select {
+  position: absolute;
+  top: 9px;
+}
+.coupon-area .code-input input[type=text] {
+  border-radius: 4px 0 0 4px;
+}
+.coupon-area .code-input a.code-btn {
+  display: block;
+  position: absolute;
+  border: 1px solid #cccccc;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 8px;
+  left: 219px;
+  top: 9px;
+  color: #c09853;
+  border-radius: 0 4px 4px 0;
+  text-decoration: none;
+  outline: none;
+}
+.coupon-area .code-input a.code-btn:hover {
+  text-decoration: none;
+  color: #c09853;
+}
+.coupon-area .code-input a.code-btn:active,
+.coupon-area .code-input a.code-btn:visited {
+  outline: none;
+  color: #c09853;
+}
+.coupon-area .code-content input[type=checkbox] {
+  position: relative;
+  top: -3px;
+}
+.coupon-area .code-content span {
+  margin-right: 12px;
+}
+.coupon-area .code-content a.other-code {
+  position: relative;
+  color: #00a0e9;
+  left: -8px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.coupon-area .code-content a.other-code:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+/*css for pad*/
+/*@media all and (min-device-width:768px) and (max-device-width: 1024px){
+  .ui-dialog{
+    min-width: 500px;
+  }
+  .ui-dialog .ui-dialog-title{
+    min-height: 1.1em;
+  }
+}*/
+@media (max-width: 1200px) {
+  .grid {
+    width: 100%;
+    padding: 0;
+  }
+  .grid.form-grid {
+    width: 100%;
+    border: none;
+  }
+  .grid.faq-grid {
+    width: auto;
+    margin: 0;
+    padding: 0 5px;
+  }
+  .content .form-grid {
+    padding: 0;
+  }
+  .ui-footer {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .ui-dialog.ui-dialog-wx-pay {
+    width: 400px;
+  }
+  .wx-order-info {
+    text-align: left;
+  }
+}
+@media (max-width: 610px) {
+  .ui-dialog.ui-dialog-wx-pay {
+    width: 350px;
+  }
+  .wx-order-info {
+    font-size: 12px;
+  }
+  .wx-hd {
+    font-size: 12px;
+  }
+  .wx-price {
+    font-size: 16px;
+  }
+}
+@media (max-width: 510px) {
+}
+@media (max-width: 414px) {
+  .content {
+    padding: 22px 0 0 0;
+  }
+  .payorder-main {
+    padding: 0 10px;
+  }
+  .faq-grid .faq-title {
+    font-size: 14px;
+    margin-bottom: 10px !important;
+  }
+  .payorder-detail-table th:first-child,
+  .payorder-detail-table td:first-child {
+    padding-left: 10px;
+  }
+  .payorder-tab-navs .tab-nav {
+    width: auto;
+    padding: 0 8px;
+  }
+  .payorder-tab-navs .tab-nav.current {
+    font-size: 14px;
+  }
+  .payorder-tab-navs strong {
+    font-size: 14px;
+  }
+  #coupon-wrap,
+  .tab {
+    margin-top: 20px !important;
+  }
+  .payorder-tab-content {
+    padding: 15px 5px;
+  }
+  .payorder-tab-content .paybank-logo-ul {
+    margin: 0;
+  }
+  .payorder-tab-content .paybank-logo-list {
+    margin: 10px 20px 20px 20px;
+  }
+  .payorder-tab-content .payorder-app-qrcode {
+    margin: 20px 0 0 10px;
+  }
+  .hunk .row.mb20 {
+    margin-bottom: 0 !important;
+  }
+  .hunk .row .col-lg-6 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .ui-header-bd .ui-logo {
+    width: auto;
+  }
+  .ui-header-bd .ui-logo-sub {
+    width: 207px;
+  }
+  .payorder-tab-navs .tab-nav {
+    padding: 0 6px;
+  }
+  .payorder-tab-content .paybank-logo-list {
+    margin: 10px 11px 15px 11px;
+  }
+  .ui-dialog.ui-dialog-wx-pay {
+    width: 300px;
+  }
+}
+@media (max-width: 360px) {
+  .ui-header-bd .ui-logo-sub {
+    width: 192px;
+  }
+  .payorder-tab-navs .tab-nav {
+    padding: 0 4px;
+  }
+  .payorder-tab-content .paybank-logo-list {
+    margin: 10px 7px 10px 7px;
+  }
+}
+@media (max-width: 320px) {
+  .payorder-main {
+    padding: 0 5px;
+  }
+  .ui-header-bd .ui-logo-sub {
+    width: 152px;
+  }
+  .payorder-tab-navs .tab-nav {
+    padding: 0;
+  }
+  .payorder-tab-content {
+    padding: 0 5px;
+  }
+  .payorder-tab-content .paybank-logo-ul {
+    margin-top: 10px;
+  }
+  .payorder-tab-content .paybank-logo-list {
+    width: 140px;
+    margin: 2px 2px 10px 2px;
+  }
+  .payorder-tab-content .itt_a,
+  .payorder-tab-content .alert {
+    margin-top: 10px;
+  }
+  .payorder-tab-content .payorder-app-qrcode {
+    margin: 10px 0 10px 10px;
+  }
+  .hunk.mt20 {
+    margin-top: 10px !important;
+  }
+  .hunk .row .col-lg-6 {
+    margin-bottom: 10px;
+  }
+}

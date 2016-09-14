@@ -1,0 +1,40 @@
+{
+    "md5path" : "md5-map.json",
+    "dest" : "build/",
+
+
+    "website" : {
+        "clean": ["build/website/js", "build/website/css"],
+        "js": {
+            "src": "website/js/**/*.js",
+            "ignore": [],
+            "dest": "build/website/",
+            "md5": ["build/**/website/**/*.js", "!build/**/website/**/*.min.js"]
+        },
+        "css": {
+            "src": "website/css/**/*.css",
+            "dest": "build/website/",
+            "md5": ["build/**/website/css/**/*.css", "!build/**/website/css/**/*.min.css"]
+        },
+        "img": {
+          "src": [
+            "website/images/**/*.{jpge,jpg,gif,png}"
+          ],
+          "dest": "build/website/"
+        }
+    },
+
+    "all": {
+      "clean": "build/",
+      "js": {
+      "src": "**/*.js",
+        "ignore": ["**/*.min.js, **/data/**/*.js"]
+      },
+      "img": {
+        "src": [
+          "**/*.{jpge,jpg,gif,png}"
+        ],
+        "dest": "build/"
+      }
+    }
+}

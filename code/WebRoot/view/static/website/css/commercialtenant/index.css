@@ -1,0 +1,244 @@
+.content-wrap {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #22baa0; 
+}
+
+
+.search-group {
+    text-align: right;
+    float: right;
+}
+.panel .panel-tab {
+    padding: 0px;
+}
+/* Tabs */
+.panel-tab .nav-tabs {
+    border-bottom: 1px solid #22baa0;
+}
+.panel-tab .nav-tabs>li {
+    text-align: center;
+    padding: 0px;
+}
+.panel-tab .nav-tabs > li > a {
+    border-bottom: 1px solid #22baa0;
+
+}
+.panel-tab .nav-tabs>li.active>a,.panel-tab .nav-tabs>li.active>a:focus,.panel-tab .nav-tabs>li.active>a:hover {
+    border: 1px solid #22baa0;
+    border-bottom-color: transparent;
+    font-weight: 700;
+}
+.panel-tab li.tab-operate {
+    padding-top: 5px;
+}
+.panel-tab .batch-operate {
+    text-align: right;
+    padding-top: 10px;
+}
+.panel-tab span.operate {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.panel-tab .nav-tabs .dropdown-menu {
+    margin-top: 10px;
+}
+.input-group-addon {
+    background:#22baa0;
+    border-color:#22baa0;
+}
+.glyphicon-search {
+    color: #fff;
+}
+.my-nav-tabs>li {
+    margin-top: 10px;
+    text-align: center;
+}
+.my-nav-tabs > li > a {
+    color: #666;
+}
+.my-nav-tabs>li.active>a {
+    background-color: #90dccf;
+    font-weight: 700;
+}
+/* Table */
+
+.dropdown-list {
+    min-width: 80px;
+}
+.dropdown-list li a {
+    text-align: center;
+}
+.table tr.selected{
+    background-color: red;
+}
+
+div.td-edit .btn-link {
+    padding: 0 5px 0 0;
+}
+
+/*details*/
+.panel .panel-heading+.panel-body {
+    padding-top: 20px;
+}
+.data-title .sign{
+    text-align: right;
+}
+.data-title .sign >  button {
+    opacity: .5;
+    cursor: auto;
+}
+.data-title .fa-star {
+    color: red;
+}
+.form-group .img-warp {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    /* position: relative; */
+    float: left;
+}
+.form-group .img-warp img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+/*.form-group .img-warp .icon-search {
+    padding: 5px;
+    background-color: #e9f8f5;
+    color: #999;
+    cursor: pointer;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}*/
+.ui-dialog-body img {
+    max-width: 650px;
+}
+.js-baseinfo .td-edit {
+    text-align: right;
+}
+td > p {
+    margin: 0px;
+}
+.control-group .label-radio {
+    padding-top: 8px;
+    padding-right: 20px;
+}
+.control-group .label-radio em {
+    
+    font-weight: bold;
+    padding: 0 5px;
+    font-style: normal;
+}
+.init-wrap {
+    display: none;
+    margin-left: 50px;
+}
+
+.organization .init-bg-wrap {
+    position: relative;
+    width: 490px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 40px;
+    background-color: #fff2dd;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.organization .init-wrap .tips {
+    margin-right: 80px;
+    color: #f60;
+}
+
+
+/*.organization .org-tree {
+    display: none;
+}*/
+
+.organization .org-icon {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    width: 67px;
+    height: 71px;
+    background: url('../../images/icon/org.png') center center;
+    z-index: 1;
+}
+
+.organization .init-save-wrap {
+    width: 450px;
+    display: none;
+}
+
+.organization .btn-cancel {
+    width: 52px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.organization .panel-body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.btn-add {
+    background-color: #f25657
+}
+
+.btn-add,
+.btn-add:hover,
+.btn-add:focus,
+.btn-add[disabled],
+.btn-add[disabled]:hover {
+    background-color: #f25657;
+    color: #fff;
+}
+
+.btn-add:hover,
+.btn-add:focus,
+.btn-add:focus:hover,
+.btn-add:active:focus,
+.btn-add:active:hover {
+    background-color: #f25657;
+    border-color: transparent;
+}
+
+.jstree-editable {
+    float: right;
+    list-style: none;
+}
+
+.jstree-default .jstree-editable li {
+    float: left;
+    margin-right: 10px;
+    color: #36c;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fa-edit {
+    color: #36c;
+}
+
+.jstree-editable .icon {
+    margin-right: 5px;
+}
+
+.jstree-default li[aria-level="1"] {
+    color: #f45653;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.jstree-default .jstree-node {
+    color: #656565;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+

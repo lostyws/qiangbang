@@ -1,0 +1,120 @@
+<div class="form-group data-title">
+    <label class="col-md-2 control-label">账号：</label>
+    <div class="col-md-10">
+        <p><code>{{userName}}</code>
+
+
+
+
+
+
+            {{#compare isApprove 1}}
+            <button class="btn btn-info">已认证</button>
+            {{else}}
+            <button class="btn btn-default">未认证</button>
+            {{/compare}}
+            {{#compare isCashdeposit 1}}
+            <button class="btn btn-info">已交保证金</button>
+            {{else}}
+            <button class="btn btn-default">未交保证金</button>
+            {{/compare}}
+            <i class="fa fa-star">{{userGrade}}</i>
+
+        </p>
+    </div>
+
+
+
+    </div>
+    <div class="form-group">
+    <label class="col-md-2 control-label">手机号：</label>
+    <div class="col-md-4">
+        <p class="form-control-static">{{phoneNumber}}</p>
+    </div>
+    <label class="col-md-2 control-label">oepenId：</label>
+    <div class="col-md-4">
+        <p class="form-control-static">{{openId}}</p>
+    </div>
+
+    </div>
+    <div class="form-group">
+    <label class="col-md-2 control-label">店名：</label>
+    <div class="col-md-4">
+        <p class="form-control-static">{{storeName}}</p>
+    </div>
+    <label class="col-md-2 control-label">门店类别：</label>
+    <div class="col-md-4">
+        <p class="form-control-static">
+            {{classify}}
+        </p>
+    </div>
+
+    </div>
+    <div class="form-group">
+    <label class="col-md-2 control-label">真实姓名：</label>
+    <div class="col-md-4">
+        <p class="form-control-static">{{realName}}</p>
+    </div>
+    <label class="col-md-2 control-label">身份证号：</label>
+    <div class="col-md-4">
+        <p class="form-control-static">{{idCard}}</p>
+    </div>
+
+    </div>
+
+    <div class="form-group">
+    <label class="col-md-2 control-label">营业执照名称：</label>
+    <div class="col-md-4">
+        <p class="form-control-static">{{businessLicenseName}}</p>
+    </div>
+    <label class="col-md-2 control-label">身份证正反面：</label>
+    <div class="col-md-4">
+        <div class="img-warp">
+            <img src="{{idCardfront}}" alt="身份证正面">
+            <span class="iconfont icon-search js-showImg"></span>
+
+        </div>
+        <div class="img-warp">
+            <img src="{{idCardreverse}}" alt="身份证反面">
+            <span class="iconfont icon-search js-showImg"></span>
+
+        </div>
+    </div>
+
+
+    </div>
+    <div class="form-group">
+    <label class="col-md-2 control-label">营业执照照片：</label>
+    <div class="col-md-4">
+        <div class="img-warp">
+            <img src="{{businessLicense}}" alt="营业执照">
+            <span class="iconfont icon-search js-showImg"></span>
+
+        </div>
+    </div>
+    <label class="col-md-2 control-label">门店照片：</label>
+    <div class="col-md-4">
+        <div class="img-warp">
+            <img src="{{storefront}}" alt="门店照片">
+            <span class="iconfont icon-search js-showImg"></span>
+
+        </div>
+
+    </div>
+
+
+    </div>
+    <div class="form-group">
+    <label class="col-md-2 control-label">联系方式：</label>
+    <div class="col-md-10">
+        <p class="form-control-static">{{contactWay}}</p>
+    </div>
+
+    </div>
+    <div class="form-group">
+    <label class="col-md-2 control-label">收货地址：</label>
+    <div class="col-md-10">
+        <p class="form-control-static">{{expressAddress}}</p>
+    </div>
+
+    </div>

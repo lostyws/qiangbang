@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  position: relative;
+  font-family: Arial, "Microsoft YaHei";
+  color: #000000;
+  min-width: 320px;
+  font-size: 14px;
+  background-color: #f3f3f3;
+}
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+textarea {
+  resize: none;
+  overflow: auto;
+}
+em {
+  font-style: normal;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+p,
+h2,
+td,
+dl,
+dt,
+dd,
+form {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+a,
+input {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hidden {
+  display: none;
+}
+.ui-dialog {
+  font-size: 12px;
+}
+.page-header {
+  height: 45px;
+  padding: 0 5px;
+  background-color: #ff6600;
+  color: #FFFFFF;
+}
+.page-header h1 {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+}
+.back-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../img/back_btn.png) 5px 1px no-repeat;
+  position: relative;
+  top: -32px;
+}
+.order-info {
+  display: block;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 4px 15px 4px 15px;
+  margin-bottom: 15px;
+}
+.order-money,
+.order-number {
+  height: 24px;
+}
+.money-number {
+  font-size: 20px;
+  color: #ff6600;
+}
+.order-name {
+  vertical-align: top;
+  height: 24px;
+}
+.t-title {
+  width: 70px;
+}
+.pay-way {
+  border-bottom: 1px solid #d8d8d8;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.coupon-pay {
+  height: 46px;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 15px;
+  position: relative;
+}
+.coupon-pay-loading {
+  background: #ffffff;
+  color: #5d5d5d;
+  padding: 5px 0;
+}
+.pay-money {
+  color: #ff6600;
+}
+.coupon-name,
+.coupon-amount {
+  position: relative;
+  top: 14px;
+}
+.coupon-select {
+  position: absolute;
+  left: 86px;
+  top: 10px;
+  text-align: center;
+}
+.select-active {
+  border: 1px solid #dedede;
+  box-shadow: 1px 1px 2px #dedede;
+}
+.dt-active {
+  border-bottom: 1px solid #dedede;
+}
+.dt-default {
+  border: 1px solid #dedede;
+  border-radius: 6px;
+}
+.coupon-select dt {
+  width: 135px;
+  padding-right: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #f3f3f3;
+  color: #5d5d5d;
+  position: relative;
+}
+.coupon-select .flow-wrap {
+  display: inline-block;
+  width: 135px;
+  height: 25px;
+  position: relative;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.select-btn {
+  display: block;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/select_btn.png) no-repeat;
+}
+.coupon-select dd {
+  display: none;
+  width: 160px;
+}
+.coupon-select li {
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  background-color: #ffffff;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+.coupon-select li span {
+  display: inline-block;
+}
+.text-flow {
+  position: absolute;
+  left: 2px;
+}
+.coupon-check,
+.balance-check {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 16px;
+  margin-right: 8px;
+  background: url(../img/checkbox.png) 0 0 no-repeat;
+}
+.check-active {
+  background: url(../img/checkbox.png) 0 -15px no-repeat;
+}
+.balance-pay {
+  min-height: 46px;
+  padding: 0 15px;
+  border-bottom: 1px solid #d8d8d8;
+  line-height: 46px;
+}
+.balance-loading {
+  line-height: 16px;
+  position: relative;
+  top: 12px;
+  display: none;
+}
+.other-pay {
+  padding: 0 10px;
+}
+.platform-way li {
+  height: 46px;
+  line-height: 46px;
+  padding-right: 5px;
+}
+.ali-border,
+.wechat-border {
+  border-bottom: 1px solid #d8d8d8;
+  display: none;
+}
+.no-border {
+  border: none;
+}
+.radio-btn {
+  width: 15px;
+  height: 15px;
+  margin: 15px 10px 0 5px;
+  background: url(/view/staticwap/image/page/pay/radio_btn.png) 0 -15px no-repeat;
+}
+.radio-btn-active {
+  background: url(/view/staticwap/image/page/pay/radio_btn.png) 0 0 no-repeat;
+}
+.platform-ico {
+  height: 35px;
+  line-height: 35px;
+  text-indent: 45px;
+  margin-top: 6px;
+}
+.ali-ico {
+  background: url(/view/staticwap/image/page/pay/plat_ico.png) 0 0 no-repeat;
+}
+.wx-ico {
+  background: url(/view/staticwap/image/page/pay/plat_ico.png) 0 -35px no-repeat;
+}
+.pay-net-amount {
+  display: none;
+}
+li.more-platform {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  color: #696969;
+  display: none;
+}
+li.more-platform div {
+  display: inline-block;
+}
+li.more-platform div span {
+  float: left;
+}
+.more-arrow {
+  width: 12px;
+  height: 17px;
+  position: relative;
+  left: 6px;
+  top: 6px;
+  background: url(../img/turn.png) no-repeat;
+  transform: rotate(90deg);
+}
+.arrow-active {
+  transform: rotate(-90deg);
+}
+.pay-tips {
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.pay-btn {
+  margin: 0 12px 13px 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.pay-btn button {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: #ffffff;
+  background-color: #00c9cf;
+}
+.submit-tips {
+  display: none;
+}
+/*弹出框小分辨率*/
+@media screen and (max-width: 320px) {
+  .ui-dialog .ui-dialog-content .ui-dialog-code {
+    margin: 0 4px;
+  }
+  .ui-dialog .btn {
+    padding: 6px 8px;
+  }
+}

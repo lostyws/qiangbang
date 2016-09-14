@@ -1,0 +1,108 @@
+button, input {
+	-webkit-appearance: none
+}
+
+.icon-up-arrow:before {
+	content: "\e600"
+}
+
+.icon-up-arrow.active:before {
+	content: "\e601"
+}
+
+body {
+	word-break: break-all;
+	background: #fff;
+	color: #333;
+	height: 100%
+}
+
+
+
+.error-page {
+	text-align: center
+}
+
+.error-page .not-found {
+	width: 60%;
+	
+}
+
+.error-page .tips1 {
+	font-size: 20px;
+	color: #444;
+	line-height: 28px
+}
+
+.error-page .tips2 {
+	color: #555;
+	font-size: 16px;
+	line-height: 32px
+}
+
+.error-page .tips3 {
+	color: #ababab;
+	padding-bottom: 20px
+}
+
+.error-page .goto {
+	display: inline-block;
+	color: #999;
+	font-size: 12px;
+	margin-top: 20px
+}
+
+.error-page .corner {
+	width: 40%;
+	margin: 10% 30% 5%
+}
+
+.idx-category {
+	background-color: #fff;
+	margin: 0;
+	padding: 12px 0;
+	box-sizing: border-box;
+	position: relative
+}
+
+.idx-category li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 25%;
+	-webkit-box-sizing: border-box;
+	float: left
+}
+
+.idx-category li a {
+	text-align: center;
+	width: 100%;
+	display: block;
+	position: relative
+}
+
+.idx-category li a p {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	margin-bottom: 4px;
+	text-align: center;
+	color: #333
+}
+
+.idx-category li a img {
+	top: inherit;
+	width: 45px;
+	height: 45px;
+	margin: 10px auto 6px;
+	-webkit-transform: inherit;
+	transform: inherit
+}
+
+.fixed-bottom {
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	border-top: 1px dotted #ccc;
+	background-color: #fff
+}

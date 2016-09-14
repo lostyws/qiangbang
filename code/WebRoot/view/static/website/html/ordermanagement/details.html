@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <title>客户详情</title>
+    <!-- Styles -->
+    <link href="http://localhost:8080/static/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet">
+    <link href="http://localhost:8080/static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/static/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/static/plugins/line-icons/simple-line-icons.css" rel="stylesheet">
+    <!-- Theme Styles -->
+    <link href="http://localhost:8080/static/public/css/modern.min.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/static/public/css/green.css" class="theme-color" rel="stylesheet" type="text/css">
+    <!-- Common Style -->
+    <link href="http://localhost:8080/static/admin/css/common/common.css" rel="stylesheet" type="text/css">
+    <!-- Scripts -->
+    <script src="http://localhost:8080/static/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="http://localhost:8080/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Global Script-->
+    <script src="http://localhost:8080/static/public/js/global.js"></script>
+    
+    
+    <!--<![endif]-->
+</head>
+<link rel="stylesheet" href="http://localhost:8080/static/myplugins/util/util.css">
+<link rel="stylesheet" href="http://localhost:8080/static/plugins/datatables/css/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="http://localhost:8080/static/plugins/datatables/css/fixedColumns.bootstrap.css" />
+<link rel="stylesheet" href="http://localhost:8080/static/plugins/artdialog/css/ui-dialog.css">
+<link rel="stylesheet" href="http://localhost:8080/static/admin/css/commercialtenant/index.css">
+<link rel="stylesheet" href="http://localhost:8080/static/plugins/select2/css/select2.min.css" />
+<link rel="stylesheet" href="http://localhost:8080/static/plugins/datetimepicker/datetimepicker.css">
+<link rel="stylesheet" href="http://localhost:8080/static/plugins/validform/validform.css" />
+
+<body>
+    <main class="page-content content-wrap">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="sidebar-pusher">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="logo-box">
+                    <a href="/tianwu/index.html" class="logo-text"><span>抢帮</span></a>
+                </div>
+                <div class="search-button">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                </div>
+                <div class="topmenu-outer">
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
+                                    <span class="user-name">管理员<i class="fa fa-angle-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-list" role="menu">
+                                    <li role="presentation"><a target="_blank" href="#"><i class="fa fa-gear"></i>修改密码</a></li>
+                                    <li role="presentation"><a href="/tianwu/j_spring_cas_security_logout"><i class="fa fa-sign-out m-r-xs"></i>安全退出</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/tianwu/j_spring_cas_security_logout" class="log-out waves-effect waves-button waves-classic">
+                                    <span><i class="fa fa-sign-out m-r-xs"></i>安全退出</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-sidebar sidebar">
+            <div class="page-sidebar-inner slimscroll" style="overflow: hidden; width: auto; height: 100%;">
+                <ul class="menu accordion-menu">
+                    <li>
+                        <a href="/static/admin/html/classifymanagement/index.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-th-list"></span>
+                            <p>分类管理</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="/static/admin/html/commercial/index.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-tags"></span>
+                            <p>客户管理</p>
+                        </a>
+                    </li>
+                    
+                    <li class="active">
+                        <a href="/static/admin/html/ordermanagement/index.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-list-alt"></span>
+                            <p>订单管理</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/static/admin/html/account/index.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-briefcase"></span>
+                            <p>账户明细</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(function() {
+            var url = window.location.href;
+            url = url.replace("http://", "");
+            if (url.indexOf("?") > 1) {
+                url = url.substr(0, url.indexOf("?"))
+            }
+            url = url.substring(url.indexOf("/"), url.length);
+            $(".accordion-menu li a").each(function() {
+                if (url == $(this).attr("href")) {
+                    $(this).parents(".sub-menu").show();
+                    $(this).parents(".droplink").addClass("open");
+                    $(this).parent().addClass("active");
+                }
+            })
+        })
+        </script>
+        <!-- Page Sidebar -->
+        <div class="page-inner">
+            
+            <div class="page-title">
+                    <h3>客户详情</h3>
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">主页</a></li>
+                            <li><a href="index.html">订单列表</a></li>
+                            <li class="active">详情</li>
+                        </ol>
+                    </div>
+                </div>
+            <div id="main-wrapper">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">基本信息</h3>
+                    </div>
+                    <div class="panel-body form-horizontal js-baseinfo">
+                        <!-- <div class="form-group td-edit" orderid="1" ordernumber="zd09090923">
+
+                            <button class="btn btn-danger js-stopOrder">终止订单</button>
+                            <button class="btn btn-danger js-deleteOrder">删除订单</button>
+                            <button class="btn btn-danger js-affirmOrder">强制已完成</button>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">订单号：</label>
+                            <div class="col-md-4">
+                                <p class="form-control-static">122</p>
+                            </div>
+                            <label class="col-md-2 control-label">金额：</label>
+                            <div class="col-md-4">
+                                
+                                <p class="form-control-static" >
+                                    <code>565656.00</code>
+                                    
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">买家：</label>
+                            <div class="col-md-4">
+                                <p class="form-control-static"><a href="/static/admin/html/commercial/details.html?id=12">webtest01</a></p>
+                            </div>
+                            <label class="col-md-2 control-label">卖家：</label>
+                            <div class="col-md-4">
+                                <p class="form-control-static"><a href="/static/admin/html/commercial/details.html?id=12">webtest01</a></p>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">发布时间：</label>
+                            <div class="col-md-4">
+                                <p class="form-control-static">122</p>
+                            </div>
+                            <label class="col-md-2 control-label">订单状态：</label>
+                            <div class="col-md-4">
+                                <p class="form-control-static">565656.00</p>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">买家评价：</label>
+                            <div class="col-md-10">
+                                <p class="form-control-static">服务态度-产品质量-</p>
+                                
+                                <p class="form-control-static">描述-</p>
+                            </div>
+                            
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">卖家评价：</label>
+                            <div class="col-md-10">
+                                <p class="form-control-static">评价-</p>
+                                
+                                <p class="form-control-static">描述-</p>
+                            </div>
+                            
+
+                        </div> -->
+                        
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">报价列表</h3>
+                    </div>
+                    <div class="panel-body form-horizontal js-transaction-record">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered dataTable my-table-bordered offer-table" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>卖家</th>
+                                        <th>报价</th>
+                                        <th>成交量</th>
+                                        <th>备注</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+            <!-- Main Wrapper -->
+            <div class="page-footer">
+                <p class="no-s">Copyright &copy; 2016 - 2018 抢帮管理后台 版权归抢帮集团所有 </p>
+            </div>
+        </div>
+    </main>
+    <script src="http://localhost:8080/static/myplugins/util/util.js"></script>
+    <script src="http://localhost:8080/static/plugins/datatables/js/jquery.datatables.js"></script>
+    <script src="http://localhost:8080/static/plugins/datatables/js/jquery.datatables.js"></script>
+    <script src="http://localhost:8080/static/plugins/datatables/js/dataTables.bootstrap.min.js"></script>
+    <script src="http://localhost:8080/static/plugins/datatables/js/dataTables.fixedColumns.js"></script>
+    <script src="http://localhost:8080/static/plugins/artdialog/js/dialog.js"></script>
+    <script src="http://localhost:8080/static/plugins/handlebars/handlebars.min.js"></script>
+    <script src="http://localhost:8080/static/plugins/select2/js/select2.js"></script>
+    <script src="http://localhost:8080/static/plugins/validform/validform.js"></script>
+    <script src="http://localhost:8080/static/plugins/datetimepicker/datetimepicker.js"></script>
+    <script src="http://localhost:8080/static/plugins/dropzone/dropzone.min.js"></script>
+    <!-- 基础信息模板 -->
+    <script type="x-handlebars-template" id="base-info-tmpl">
+        <div class="form-group" >
+            <label class="col-md-2 control-label">订单号：</label>
+            <div class="col-md-4">
+                <p class="form-control-static">{{orderNumber}}</p>
+            </div>
+            <div class="col-md-6 td-edit" orderid="{{id}}" ordernumber="{{orderNumber}}">
+                <button class="btn btn-danger js-stopOrder">终止订单</button>
+                <button class="btn btn-danger js-deleteOrder">删除订单</button>
+                <button class="btn btn-danger js-affirmOrder">强制已完成</button>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">意向金额：</label>
+            <div class="col-md-4">
+                
+                <p class="form-control-static" >
+                    {{intentionAmount}}
+                    
+                </p>
+            </div>
+
+            <label class="col-md-2 control-label">交易金额：</label>
+            <div class="col-md-4">
+                
+                <p class="form-control-static" >
+                    <code>{{transactionAmount}}</code>
+                    
+                </p>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">买家：</label>
+            <div class="col-md-4">
+                <p class="form-control-static"><a href="/static/admin/html/commercial/details.html?id={{buyerId}}">{{buyerName}}</a></p>
+            </div>
+            <label class="col-md-2 control-label">卖家：</label>
+            <div class="col-md-4">
+                <p class="form-control-static"><a href="/static/admin/html/commercial/details.html?id={{sellerId}}">{{sellerName}}</a></p>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">发布时间：</label>
+            <div class="col-md-4">
+                <p class="form-control-static">{{releaseTime}}</p>
+            </div>
+            <label class="col-md-2 control-label">订单状态：</label>
+            <div class="col-md-4">
+                <p class="form-control-static">
+                    {{#compare status 1}}
+                    进行中
+                    {{/compare}}
+                    {{#compare status 2}}
+                    已完成
+                    {{/compare}}
+                    {{#compare status 3}}
+                    已取消
+                    {{/compare}}
+                    
+                </p>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">买家评价：</label>
+            <div class="col-md-10">
+                <p class="form-control-static">服务态度-{{buyerEvaluate.service}}产品质量-{{buyerEvaluate.quality}}</p>
+                
+                <p class="form-control-static">描述-{{buyerEvaluate.describe}}</p>
+                <p class="form-control-static">
+                    {{#each buyerEvaluate.imgList}}
+                    <div class="img-warp">
+                        <img src="{{this}}" alt="">
+                        <span class="iconfont icon-search js-showImg"></span>
+
+                    </div>
+                    {{/each}}
+                </p>
+            </div>
+            
+
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">卖家评价：</label>
+            <div class="col-md-10">
+                <p class="form-control-static">评价-{{sellerEvaluate.grade}}</p>
+                
+                <p class="form-control-static">描述-{{sellerEvaluate.describe}}</p>
+            </div>
+            
+
+        </div>
+        
+                   
+    </script>
+    <!-- 报价列表模板 -->
+    <script type="x-handlebars-template" id="offer-list-tmpl">
+        {{#each this}}
+        <tr role="row" class="odd">
+            <td>1</td>
+            <td><a href="/static/admin/html/commercial/details.html?id={{sellerId}}">{{sellerName}}</a></td>
+            <td>{{offerMoney}}</td>
+            <td>{{sumOrders}}</td>
+            <td><p>{{describe}}</p></td>
+        </tr>
+        {{/each}}
+        
+                   
+    </script>
+    <!-- 弹框模板 -->
+    <script type="x-handlebars-template" id="dialog-tmpl">
+        <div class="my-dialog-left"><em class="my-dialog-icon icon-bounce"></em></div>
+        <div class="my-dialog-right">
+            <p class="my-dialog-strong">你确定要 <span class="my-dialog-red">{{text}}</span>？</p>
+            
+        </div>
+    </script>
+   
+    <script>
+    var config = {
+        
+        showDetailsUrl: 'http://127.0.0.1:3004',//获取用户详情
+        stopOrderUrl: 'http://127.0.0.1:3002',//终止订单
+        delOrderUrl: 'http://127.0.0.1:3002',//删除订单
+        affirmOderUrl: 'http://127.0.0.1:3002',//强制确定交易完成
+        
+       
+    }
+    </script>
+    <script src="http://localhost:8080/static/admin/js/ordermanagement/details.js"></script>
+</body>
+
+</html>

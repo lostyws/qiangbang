@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>typeahead</title>
+</head>
+<style>
+	.typeahead,
+.tt-query,
+.tt-hint {
+  width: 396px;
+  height: 30px;
+  padding: 8px 12px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  outline: none;
+}
+
+.typeahead {
+  background-color: #fff;
+}
+
+.typeahead:focus {
+  border: 2px solid #0097cf;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-menu {
+  width: 422px;
+  margin: 12px 0;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tt-suggestion:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0097cf;
+}
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+.gist {
+  font-size: 14px;
+}
+.tt-dataset {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+</style>
+<body>
+	<input class="typeahead tt-input" type="text" placeholder="区级名称(如：苏州园区或吴中区)" autocomplete="off">
+</body>
+<script src="http://172.16.14.78/modern/Source/admin1/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+<script src="typeahead.bundle.js"></script>
+<script>
+var data = [
+{ "team": "章海洋" },
+{ "team": "Chicago Bears" },
+{ "team": "Cincinnati Bengals" },
+{ "team": "崔" },
+{ "team": "Denver Broncos" },
+{ "team": "苏州园区" },
+{ "team": "Tampa Bay Buccaneers" },
+{ "team": "Arizona Cardinals" },
+{ "team": "San Diego Chargers" },
+{ "team": "Kansas City Chiefs" },
+{ "team": "Indianapolis Colts" },
+{ "team": "Dallas Cowboys" },
+{ "team": "Miami Dolphins" },
+{ "team": "Philadelphia Eagles" },
+{ "team": "Atlanta Falcons" },
+{ "team": "New York Giants" },
+{ "team": "Jacksonville Jaguars" },
+{ "team": "New York Jets" },
+{ "team": "Detroit Lions" },
+{ "team": "Green Bay Packers" },
+{ "team": "Carolina Panthers" },
+{ "team": "New England Patriots" },
+{ "team": "Oakland Raiders" },
+{ "team": "St.Louis Rams" },
+{ "team": "Baltimore Ravens" },
+{ "team": "Washington Redskins" },
+{ "team": "New Orlean Saints" },
+{ "team": "Seattle Seahawks" },
+{ "team": "Pittsburgh Steelers" },
+{ "team": "Houston Texans" },
+{ "team": "Tennesse Titans" },
+{ "team": "Minnesota Viking" }
+]
+
+var arr = [];
+for(var i = 0, l = data.length; i < l; i++) {
+	arr.push(data[i]['team'])
+}
+console.log(arr)
+	 // default suggestions
+  // -------------------
+
+  var nflTeams = new Bloodhound({
+  	local: data,
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team'),
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    identify: function(obj) { return obj.team; },
+    //prefetch: 'http://twitter.github.io/typeahead.js/data/nfl.json',
+    // remote: {
+    //   url: 'http://127.0.0.1:3000?q=%QUERY',
+    //   wildcard: '%QUERY'
+    // }
+  });
+
+  function nflTeamsWithDefaults(q, sync, async) {
+    if (q === '') {
+      sync(nflTeams.get(arr));
+    }
+
+    else {
+      nflTeams.search(q, sync);
+    }
+  }
+
+  $('.typeahead').typeahead({
+    minLength: 0,
+    highlight: true
+  },
+  {
+    name: 'nfl-teams',
+    display: 'team',
+    source: nflTeamsWithDefaults,
+    limit: 100
+  });
+</script>
+</html>

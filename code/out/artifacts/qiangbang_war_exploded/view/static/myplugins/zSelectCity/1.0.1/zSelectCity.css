@@ -1,0 +1,113 @@
+/**城市联动插件**/
+.select_city {
+  display: none;
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  background: #ffffff;
+  z-index: 9999;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.select_city_tab {
+  overflow: hidden;
+}
+.select_city_tab a {
+  float: left;
+  display: inline-block;
+  padding: 5px 0;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+.select_city_tab a.actived {
+  border-bottom-color: transparent;
+  background: url('http://static.joyowo.com/public/images/orgen_bg.png') left top repeat-x;
+  color: #eb6100;
+}
+.select_city_tab a.last {
+  border-right: none;
+}
+.select_city_con_wrap div.actived {
+  display: block;
+}
+.select_city_con {
+  padding: 10px 15px;
+  overflow: hidden;
+  display: none;
+}
+.select-icon {
+  background: url('http://static.joyowo.com/public/images/select_icon.png') no-repeat center right;
+}
+/*.select_city_con {
+  overflow: hidden;
+}*/
+.select_city_con dl {
+  width: 100%;
+  overflow: hidden;
+}
+.select_city_con dt {
+  display: inline-block;
+  width: 28px;
+  float: left;
+  margin-right: 10px;
+  font-weight: 700;
+  text-align: right;
+  line-height: 2;
+}
+.select_city_con dd {
+  display: inline;
+  float: left;
+  margin-left: 0;
+}
+.select_city_con .diff_dd {
+}
+.select_city_con a {
+  display: inline-block;
+  color: #333;
+  padding: 0 9px;
+  outline: 0;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 2;
+}
+.select_city_con a.actived,
+.select_city_con a.actived:hover {
+  background: #eb6100;
+  color: #fff;
+}
+.select_city_con a:hover {
+  color: #eb6100;
+}
+
+
+/**ul 下拉**/
+.ul_select {
+  display: none;
+  position: absolute;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 0 0 4px 4px;
+}
+.ul_select li {
+  border-top: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+  color: #999;
+  font-size: 14px;
+  text-indent: 10px;
+  cursor: pointer;
+  background: #fff;
+}
+.ul_select li:hover {
+  color: #333;
+  font-weight: 700;
+}

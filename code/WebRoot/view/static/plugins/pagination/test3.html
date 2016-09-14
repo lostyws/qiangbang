@@ -1,0 +1,140 @@
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title></title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="pagination.css">
+<div class="con">
+
+</div>
+<div class="pagination">
+</div>
+</body>
+<script type="text/javascript" src="../../jquery/1.11.1/jquery.js"></script>
+<script type="text/javascript" src="jquery.pagination.js"></script>
+<script type="text/javascript">
+
+/*
+  **nodejs服务测试
+  **json数据格式
+  {
+    'total_size': total_size,
+    'current_page': current_page,
+    'page_size': page_size,
+    'data': slice_data
+  };
+
+*/
+
+
+
+
+function Paginationajax(args) {
+  this.tag = true;
+  this.ajaxurl = args.ajaxurl;
+  this.callback = args.callback || function() {};
+  this.setData = args.setData || function() {}; 
+  this.ajaxdata = args.ajaxdata;
+  this.paginationCls = args.paginationCls;
+}
+
+Paginationajax.prototype.ajax = function() {
+  var _this = this;
+
+  if(!_this.tag) return;
+  
+  var dtd = $.Deferred();
+
+  var current_page = arguments[0];
+
+  /**设置需要的ajax data**/
+  var data = _this.setData();
+
+  /**扩展ajax data**/
+  _this.ajaxdata = $.extend(_this.ajaxdata, {current_page: current_page}, data || {} );
+
+  $.ajax({
+    url: _this.ajaxurl,
+    // data: {
+    //   page_size: 20,
+    //   current_page : arguments[0] 
+    // },
+    data: _this.ajaxdata,
+    dataType:'jsonp',
+    success: function(data){
+      dtd.resolve(data);
+      _this.callback(data);
+      _this.setData();
+      _this.tag = true;
+    }
+  });
+
+  return dtd.promise();
+}
+
+Paginationajax.prototype.pagination = function(data) {
+  var _this = this;
+  _this.tag = false;
+  $(_this.paginationCls).pagination(data.total_size, {
+    'items_per_page': data.page_size,
+    'num_display_entries': 5,
+    'num_edge_entries': 2,
+    'prev_text': '上一页',
+    'next_text': '下一页',
+    'callback': function() {_this.ajax.apply(_this, arguments);}
+  });
+}
+
+Paginationajax.prototype.init = function() {
+  var _this = this;
+  $.when(this.ajax()).then(
+    function(data) {
+      _this.pagination(data);//初始化一次
+    },
+    function() {
+      alert('请求失败');
+    }
+  );
+}
+
+
+/**ajxa后的回调**/
+function set_html(data) {
+  var str='',
+      list = data.data;
+  for(var i = 0, l = list.length; i < l; i++) {
+    str+= '<span>' + list[i] + '</span>&nbsp;';
+  }
+  $('.con').html(str);
+}
+
+/**设置格外ajax data(第一次没的)**/
+
+function set_data() {
+  var obj = {};
+  obj.list = [];
+
+  $('.con span').each(function () {
+    var temp = {};
+    temp.i = $(this).text();
+    console.log($(this).text())
+    obj.list.push(temp);
+  })
+  console.log(obj);
+  return obj;
+}
+
+var a = new Paginationajax({
+  'paginationCls' :'.pagination',
+  'ajaxurl':'http://127.0.0.1:3000/',
+  'ajaxdata' : {
+    page_size: 10
+  },
+  'callback': set_html,
+  'setData': set_data
+});
+a.init();
+
+</script>
+</html>

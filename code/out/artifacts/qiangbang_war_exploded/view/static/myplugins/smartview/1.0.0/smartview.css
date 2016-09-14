@@ -1,0 +1,163 @@
+.js-smartview-wrap {
+    position: relative;
+    float: left;
+}
+
+.js-smartview-tab {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    cursor: pointer;
+    padding-top: 7px !important;
+    font-size: 18px !important;
+    color: #22baa0;
+}
+
+.js-smartview-panel {
+    position: absolute;
+    display: none;
+    z-index: 3000;
+    top: 45px;
+    left: 0;
+    width: auto;
+    border: 0;
+    background: none;
+}
+
+.js-smartview-panel.active {
+    display: block;
+}
+
+.js-smartview-panel .panel-bg {
+    background-color: #22baa0;
+    -webkit-box-shadow: 0 1px 2px #ddd;
+    -moz-box-shadow: 0 1px 2px #ddd;
+    box-shadow: 0 1px 2px #ddd;
+}
+
+.view-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100px;
+    border-radius: 6px 0 0 6px;
+}
+
+.view-right {
+    position: relative;
+    top: 0;
+    left: 100px;
+    min-width: 220px;
+    min-height: 100px;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    background: #fff;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 2px #ddd;
+    -moz-box-shadow: 1px 1px 2px #ddd;
+    box-shadow: 1px 1px 2px #ddd;
+}
+
+.view-table-ul,
+.view-list-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.view-table-ul li {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+}
+
+.view-table-ul li.active,
+.view-table-ul li:hover {
+    background-color: #16A58C;
+}
+
+.view-table-ul li.active .triangle-left,
+.view-table-ul li:hover .triangle-left {
+    opacity: 1;
+}
+
+.view-table-ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.view-table-ul .triangle-left {
+    position: absolute;
+    z-index: 99;
+    top: 14px;
+    right: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    -webkit-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+}
+
+.view-list-ul li {
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    -webkit-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+}
+
+.view-list-ul li:hover {
+    background-color: #eee;
+}
+
+.view-list-ul li a {
+    color: #666;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.view-list-ul li.active a {
+    color: #22BAA0;
+}
+
+.view-right-list-wrap {
+    display: none;
+}
+
+.view-right-list-wrap.active {
+    display: block;
+}
+
+.js-smartview-tab .view-name {
+    margin-right: 5px;
+}
+
+.js-smartview-panel .arrow-tip {
+    background: #f25656;
+    background: linear-gradient(135deg, transparent 12px, #f25656 0) top left, linear-gradient(45deg, transparent 11px, #f25656 0) bottom left;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    color: #fff;
+    padding: 0 5px 0 22px;
+    border-radius: 2px;
+    height: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.js-smartview-panel .arrow-tip strong {
+    margin-right: 2px;
+}

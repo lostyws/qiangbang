@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="google-site-verification" content="EGpeU8lMdt7x_LsqOd7MAXeYZW9ZKf1MML-n6C4emtA" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <title>收银台-抢帮网</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script>
+    /*MonitorHD*/
+    (function(w, d, m) {
+        w[m] = w[m] || function() {
+            (w[m].q = w[m].q || []).push(arguments)
+        }, w[m].r = +new Date;
+    })(window, document, "MonitorHD");
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="/view/staticwap/css/pay/global.css" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link type="text/css" rel="stylesheet" href="/view/staticwap/css/page/pay/withdraw.css" />
+    <link type="text/css" rel="stylesheet" href="/view/staticwap/css/page/pay/payorder.css" />
+    <link type="text/css" rel="stylesheet" href="/view/staticwap/css/page/pay/dialog.css" />
+    <link type="text/css" rel="stylesheet" href="/view/staticwap/css/page/pay/m_payorder.css" />
+    <script>
+
+
+    window.monitorConfig = {
+        product: 'zhubajie',
+    };
+    //判断是否支持WebP
+    (function(window) {
+        if (!window.ZBJInfo.sWebP) {
+            var img = new Image();
+            img.onload = img.onerror = function() {
+                window.ZBJInfo.sWebP = (img.width > 0) && (img.height > 0);
+            };
+            img.src = 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==';
+        }
+    }(window));
+    </script>
+    <script type="text/javascript" src="/view/staticwap/js/vendor/seajs/2.3.0/sea.js"></script>
+    <script type="text/javascript" src="/view/staticwap/js/libs/storage.js"></script>
+    <script type="text/javascript" src="/view/staticwap/js/sea.config.js"></script>
+
+    <script>
+    MonitorHD.sh = +new Date;
+    </script>
+</head>
+
+<body>
+    <!--[if lte IE 7]>
+<div class="ui-tips ui-tips-warning ie-update zbj-tips text-center">
+    你正在使用IE低级浏览器，为了您的抢帮账号安全和更好的产品体验，<br />强烈建议您立即 <a class="blue" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank">升级IE浏览器</a> 或者用更快更安全的 <a class="blue" href="https://www.baidu.com/s?ie=UTF-8&wd=%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8" target="_blank">谷歌浏览器Chrome</a> 。
+</div>
+<![endif]-->
+    <header class="page-header">
+        <h1>收银台</h1>
+        <div class="back-btn" onclick="history.go(-1);"></div>
+    </header>
+    <div class="m-payorder-main">
+        <table class="order-info">
+            <tbody>
+                <tr class="order-money">
+                    <td class="t-title">订单金额：</td>
+                    <td class="money-number">￥500.00</td>
+                </tr>
+                <tr class="order-number">
+                    <td class="t-title">订单编号：</td>
+                    <td>20160519215704400317</td>
+                </tr>
+                <tr class="order-name">
+                    <td class="t-title">订单名称：</td>
+                    <td>orderTitle</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pay-way">
+            <form id="J_balance-pay-form" method="post" action="/payorder/to">
+                <div class="coupon-pay" style="display:none;">
+                    <input style="display:none;" type="checkbox" id="J_agreement-coupon" name="couponcheck" value="1" />
+                    <input type="hidden" id="pay-coupon-amount" name="coupon" value="" data-value="0" />
+                    <div class="fl">
+                        <div class="fl coupon-check"></div>
+                        <div class="fl coupon-name">优惠券</div>
+                        <dl id="coupon-select" class="coupon-select fl">
+                            <dt class="dt-default"><span class="flow-wrap"><span class="coupon-text">选择优惠券</span></span><span class="select-btn"></span></dt>
+                            <dd>
+                                <div id="coupon-loading" class="coupon-pay-loading">
+                                    <img src="http://t5.zbjimg.com/r/p/loading-small.gif" alt="loading" style="margin-right:10px;">处理中，请稍等…
+                                </div>
+                                <!-- 优惠券列表 -->
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="pay-money coupon-amount fr">￥0.00</div>
+                </div>
+                <div class="hidden">
+                    <!-- 仅使用余额支付的时候使用 -->
+                    <input type="hidden" name="data" value="D8rbUcriahJ8c0gBQwVoLZxbLZO1QhFYaMJjdEQKsyxbNEr6dCrfUhgKc0tkdmO5pgYGQzsWUgv5ucRfahq5p5QMsZAnpyI6Q5b5UCW4dC7iQwV5syxbNwx5NEriuct13lQKQhv83mJ8JmgidmogQ5b5AMJ5c0v83mJ8c074QwV5LwIisyB7pyI5NEr63cr0uCsgc0s43mP5p5rElgREQzWdNEre3FvgahF5amP5pwx1QhvWdFv5ucRfahq5p5Q8LZO0LZPopyQosyAbsZ9bLZLos8Q1QzsWUhRgUM95p5r4AhtgAgtRdmogQ5b5dcsgAgvR3EQKLy9npyP6LwO1Qzs7ahsfdcr1QwV5uStiAZRANWb4dmF6u6QjDhreNhs4aJb4AmF7aMrB3crANWR5ugTkDJs7a5Q1QhF6DC7wcMJ8aEQKQhkidSxKcEvANMtkA018NzR5u57wa0WANMTkDCv83mJ8cEvuUhR9UcgkPMgjQ5b5U0kkAhdgc0v8uCdRa5QKLwtv" />
+                    <input class="J_pay-with-balance" name="balance_amount" type="hidden" />
+                    <input class="J_pay-with-money" name="ebank_amount" type="hidden" />
+                    <input class="J_pay-with-coupon" name="coupon" type="hidden" />
+                    <input id="J_balance-key" name="bs_key" type="hidden" />
+                    <input id="J_balance-code" name="code" type="hidden" />
+                </div>
+            </form>
+            <div class="other-pay">
+                <form id="J_deposit-pay-form" method="post" action="/payorder/to" target="_blank">
+                    <div style="display: none;">
+                        <input id="J_pay-alipay-checkbox" type="radio" checked name="bankcode" value="" class="pay-channel-radio" data-paychnid="1" />
+                        <input id="J_pay-weixin-checkbox" type="radio" name="bankcode" value="" class="pay-channel-radio" data-paychnid="65" />
+                    </div>
+                    <ul class="platform-way">
+                        <li id="ali-wrap" class="ali-border">
+                            <div class="radio-btn fl"></div>
+                            <div class="platform-ico ali-ico fl">支付宝</div>
+                            <div class="pay-net-amount pay-money fr">￥500.00</div>
+                        </li>
+                        <li id="wechat-wrap" class="wechat-border">
+                            <div class="radio-btn fl"></div>
+                            <div class="platform-ico wx-ico fl">微信支付</div>
+                            <div class="pay-net-amount pay-money fr">￥500.00</div>
+                        </li>
+                        <li class="more-platform">
+                            <div>
+                                <span>更多支付方式</span>
+                                <span class="more-arrow"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="hidden">
+                        <!-- 储蓄卡支付信息新版本 ebank_amount默认值为订单金额 -->
+                        <input id="J_deposit-balance" class="J_pay-with-balance" name="balance_amount" type="hidden" />
+                        <input id="J_deposit-pay" class="J_pay-with-money" name="ebank_amount" type="hidden" value="500" />
+                        <input id="J_deposit-coupon" class="J_pay-with-coupon" name="coupon" type="hidden" />
+                        <input id="J_deposit-chnid" name="paychnid" type="hidden" />
+                        <!-- 订单信息 -->
+                        <input type="hidden" name="data" value="D8rbUcriahJ8c0gBQwVoLZxbLZO1QhFYaMJjdEQKsyxbNEr6dCrfUhgKc0tkdmO5pgYGQzsWUgv5ucRfahq5p5QMsZAnpyI6Q5b5UCW4dC7iQwV5syxbNwx5NEriuct13lQKQhv83mJ8JmgidmogQ5b5AMJ5c0v83mJ8c074QwV5LwIisyB7pyI5NEr63cr0uCsgc0s43mP5p5rElgREQzWdNEre3FvgahF5amP5pwx1QhvWdFv5ucRfahq5p5Q8LZO0LZPopyQosyAbsZ9bLZLos8Q1QzsWUhRgUM95p5r4AhtgAgtRdmogQ5b5dcsgAgvR3EQKLy9npyP6LwO1Qzs7ahsfdcr1QwV5uStiAZRANWb4dmF6u6QjDhreNhs4aJb4AmF7aMrB3crANWR5ugTkDJs7a5Q1QhF6DC7wcMJ8aEQKQhkidSxKcEvANMtkA018NzR5u57wa0WANMTkDCv83mJ8cEvuUhR9UcgkPMgjQ5b5U0kkAhdgc0v8uCdRa5QKLwtv" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p class="pay-tips">
+            1.托管的赏金会冻结在您的账户中，服务商完成工作且您验收完毕后才会支付给对方，请放心托管。
+            <br/> 2.在您托管赏金后，服务商才会开始为您工作。
+            <br/> 3.如果没有找到合适的服务商，承诺100%退款。
+        </p>
+        <div class="pay-btn">
+            <button id="pay-btn-bank">确认支付</button>
+        </div>
+    </div>
+    <script type="js/tpl" id="loadingWXPay">
+        <img src="http://t5.zbjimg.com/t5s/pay/img/loading-big.gif" alt="正在载入中">
+        <span class="loading-wx-span">页面正在加载中...</span>
+    </script>
+    <script type="js/tpl" id="sendMsgTpl">
+        <div class="ui-dialog-alert" id="J_message-tips-wrap">
+            <p>为保证交易安全，点击获取验证码后请查收您的手机短信，输入验证码以完成支付。
+                <br>由于运营商的不同，短信可能会有一定延迟，请稍等几分钟。</p>
+        </div>
+        <p class="mt10 amount-wrap" id="J_message-coupon-wrap">
+            <span class="amount-title">优惠券支付金额：</span>
+            <span class="color_orange">￥ <span id="J_message-coupon-amount">1000.00</span></span>
+        </p>
+        <p class="mt10" id="J_message-balance-wrap">
+            <span class="amount-title">余额支付金额：</span>
+            <span class="color_orange">￥ <span id="J_message-balance-amount">1000.00</span></span>
+        </p>
+        <p class="mt10 amount-wrap" id="J_message-money-wrap">
+            <span class="amount-title">第三方平台支付：</span>
+            <span class="color_orange">￥ <span id="J_message-money-amount">1000.00</span></span>
+        </p>
+        <p class="mt10" id="amount-code-wrap">
+            <span class="amount-title">短信验证码将发至：</span>
+            <strong class="color_orange" id="J_message-receiver">150*****728</strong>
+            <a href="http://u.zbj.com/cert/mobile/" target="_blank" class="ui-dialog-modify">修改手机号码</a>
+        </p>
+        <p>
+            请输入验证码：
+            <input id="J_message-code-input" class="ui-dialog-code" type="text">
+            <a class="btn btn-success btn-sm btn-get-code" href="javascript:;">获取验证码</a>
+        </p>
+    </script>
+    <script type="js/tpl" id="payingTipsTpl">
+        <div class="ui-dialog-paying-tips">
+            <p class="mt10">请问您完成付款了吗?</p>
+            <p class="mt10">如没有，请在新打开的支付页面进行付款的操作。</p>
+            <p class="mt10 submit-tips">若页面未正常打开，请<a class="orange" href="javascript:">点击此处</a>跳转至支付宝完成支付。</p>
+        </div>
+    </script>
+    <script id="wxPayTpl" type="js/tpl">
+        <div class="wx-pay-wrap yahei">
+            <div class="wx-order-wrap">
+                <ul class="wx-order-info">
+                    <li>交易号：<span>20160519215704400317</span></li>
+                    <li>提交时间：<span class="wx-order-time">2015-05-14</span></li>
+                    <li>请您在2小时内支付，否则二维码将失效。</li>
+                </ul>
+            </div>
+            <div class="wx-hd">
+                <p>
+                    支付金额
+                    <span class="wx-price"><i>¥</i><span>79.00</span></span>，请使用微信扫描下方二维码完成支付
+                </p>
+            </div>
+            <div class="wx-bd">
+                <div class="wx-content-box">
+                    <img src="http://placehold.it/200x200" alt="微信支付二维码" width="200" height="200">
+                </div>
+                <div class="wx-other-action">
+                    <a class="pc-wrap" id="reChooseUrl" href="###">
+                        <i class="arrow-left">&lt;</i>
+                        <strong>选择其他支付方式</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </script>
+    <div class="hidden">
+        <input id="userMobile" type="hidden" value="150*****728" />
+        <input id="sendKey" type="hidden" value="Ly9npyP6LwO1Ly90L6U0swLWLb==" />
+        <input id="order-data" type="hidden" name="data" value="D8rbUcriahJ8c0gBQwVoLZxbLZO1QhFYaMJjdEQKsyxbNEr6dCrfUhgKc0tkdmO5pgYGQzsWUgv5ucRfahq5p5QMsZAnpyI6Q5b5UCW4dC7iQwV5syxbNwx5NEriuct13lQKQhv83mJ8JmgidmogQ5b5AMJ5c0v83mJ8c074QwV5LwIisyB7pyI5NEr63cr0uCsgc0s43mP5p5rElgREQzWdNEre3FvgahF5amP5pwx1QhvWdFv5ucRfahq5p5Q8LZO0LZPopyQosyAbsZ9bLZLos8Q1QzsWUhRgUM95p5r4AhtgAgtRdmogQ5b5dcsgAgvR3EQKLy9npyP6LwO1Qzs7ahsfdcr1QwV5uStiAZRANWb4dmF6u6QjDhreNhs4aJb4AmF7aMrB3crANWR5ugTkDJs7a5Q1QhF6DC7wcMJ8aEQKQhkidSxKcEvANMtkA018NzR5u57wa0WANMTkDCv83mJ8cEvuUhR9UcgkPMgjQ5b5U0kkAhdgc0v8uCdRa5QKLwtv" />
+        <input id="order-amount" type="hidden" name="amount" value="500">
+        <input id="balance" type="hidden" name="balance" value="" />
+    </div>
+
+    <script>
+    window.WEBIMCONFIG = {
+        host: "http://webim.zbj.com:32768",
+        getbrandnameurl: "http://u.zbj.com/ajax/getbrandname",
+        userHost: "http://u.zbj.com",
+        filterUrl: "http://task.zbj.com/api/filter",
+        getAboutUrl: "http://task.zbj.com/api/urltitle",
+        defaultIcon: 'http://t4.zbjimg.com/r/p/task/48.gif',
+        rulepage: 'http://help.zbj.com/1037.html'
+    }
+    </script>
+    <script type="text/javascript" src="/view/staticwap/js/page/pay/global.js"></script>
+    <script type="text/javascript" src="/view/staticwap/js/page/pay/highlight.js"></script>
+    <script type="text/javascript" src="/view/staticwap/js/page/pay/parseTpl.js"></script>
+    <script type="text/javascript" src="/view/staticwap/js/page/pay/dialog.js"></script>
+    <script type="text/javascript" src="/view/staticwap/js/page/pay/m_payorder.js"></script>
+    <script type="text/javascript" src="/view/staticwap/js/page/pay/count.js"></script>
+    <script>
+    MonitorHD.sd = +new Date;
+    </script>
+</body>
+
+</html>

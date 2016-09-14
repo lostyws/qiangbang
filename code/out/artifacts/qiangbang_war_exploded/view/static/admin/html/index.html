@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <title>商户管理</title>
+    <!-- Styles -->
+    <link href="http://localhost:8080/trunk/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet">
+    <link href="http://localhost:8080/trunk/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/trunk/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/trunk/plugins/line-icons/simple-line-icons.css" rel="stylesheet">
+    <!-- Theme Styles -->
+    <link href="http://localhost:8080/trunk/public/css/modern.min.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/trunk/public/css/green.css" class="theme-color" rel="stylesheet" type="text/css">
+    <!-- Common Style -->
+    <link href="http://localhost:8080/trunk/admin/css/common/common.css" rel="stylesheet" type="text/css">
+    <!-- Scripts -->
+    <script src="http://localhost:8080/trunk/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Global Script-->
+    <script src="http://localhost:8080/trunk/public/js/global.js"></script>
+    
+    
+    <!--<![endif]-->
+</head>
+<link rel="stylesheet" href="http://localhost:8080/trunk/myplugins/util/util.css">
+<link rel="stylesheet" href="http://localhost:8080/trunk/plugins/datatables/css/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="http://localhost:8080/trunk/plugins/datatables/css/fixedColumns.bootstrap.css" />
+<link rel="stylesheet" href="http://localhost:8080/trunk/plugins/artdialog/css/ui-dialog.css">
+<link rel="stylesheet" href="http://localhost:8080/trunk/admin/css/commercialtenant/index.css">
+<link rel="stylesheet" href="http://localhost:8080/trunk/plugins/select2/css/select2.min.css" />
+<link rel="stylesheet" href="http://localhost:8080/trunk/plugins/datetimepicker/datetimepicker.css">
+<link rel="stylesheet" href="http://localhost:8080/trunk/plugins/validform/validform.css" />
+
+<body>
+    <main class="page-content content-wrap">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="sidebar-pusher">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="logo-box">
+                    <a href="/tianwu/index.html" class="logo-text"><span>抢帮</span></a>
+                </div>
+                <div class="search-button">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                </div>
+                <div class="topmenu-outer">
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
+                                    <span class="user-name">管理员<i class="fa fa-angle-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-list" role="menu">
+                                    <li role="presentation"><a target="_blank" href="#"><i class="fa fa-gear"></i>修改密码</a></li>
+                                    <li role="presentation"><a href="/tianwu/j_spring_cas_security_logout"><i class="fa fa-sign-out m-r-xs"></i>安全退出</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/tianwu/j_spring_cas_security_logout" class="log-out waves-effect waves-button waves-classic">
+                                    <span><i class="fa fa-sign-out m-r-xs"></i>安全退出</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-sidebar sidebar">
+            <div class="page-sidebar-inner slimscroll" style="overflow: hidden; width: auto; height: 100%;">
+                <ul class="menu accordion-menu">
+                    <li class="active">
+                        <a href="profile.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-tags"></span>
+                            <p>商户管理</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-list-alt"></span>
+                            <p>订单管理</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-briefcase"></span>
+                            <p>账户明细</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(function() {
+            var url = window.location.href;
+            url = url.replace("http://", "");
+            if (url.indexOf("?") > 1) {
+                url = url.substr(0, url.indexOf("?"))
+            }
+            url = url.substring(url.indexOf("/"), url.length);
+            $(".accordion-menu li a").each(function() {
+                if (url == $(this).attr("href")) {
+                    $(this).parents(".sub-menu").show();
+                    $(this).parents(".droplink").addClass("open");
+                    $(this).parent().addClass("active");
+                }
+            })
+        })
+        </script>
+        <!-- Page Sidebar -->
+        <div class="page-inner">
+            
+            <div class="page-title">
+                    <h3>商户管理</h3>
+                    <!-- <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">UI Kits</a></li>
+                            <li class="active">Icons</li>
+                        </ol>
+                    </div> -->
+                </div>
+            <div id="main-wrapper">
+                <div class="panel panel-white">
+                   
+                    <div class="panel-body panel-tab">
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                           
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active col-md-2"><a href="#tab1" role="tab" tab-type="1" data-toggle="tab">普通用户</a></li>
+                                <li role="presentation" class="col-md-2"><a href="#tab2" role="tab" tab-type="2" data-toggle="tab">普通商户</a></li>
+                                <li role="presentation" class="col-md-2"><a href="#tab3" role="tab" tab-type="3" data-toggle="tab">个体工商户</a></li>
+                                <li class="tab-operate col-md-6">
+                                    <div class="col-sm-offset-6 col-md-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control js-customerName" placeholder="请输入用户名">
+                                            <span class="input-group-addon add-on"><i class="glyphicon glyphicon-search"></i></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <div class="col-md-4 batch-operate">
+                                        <span class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="menu-icon glyphicon glyphicon-cog"></span><span class="operate">批量操作</span><span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-list js-operate-list" role="menu">
+                                            <li role="presentation"><a href="javascript:;;">开放至公海</a></li>
+                                            <li role="presentation"><a href="javascript:;;">转移</a></li>
+                                            <li role="presentation"><a href="javascript:;;">删除</a></li>
+                                            <li role="presentation"><a href="javascript:;;">导入</a></li>
+                                        </ul>
+                                        </span>
+                                    </div> -->
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="tab1">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered dataTable my-table-bordered user-table1" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>序号</th>
+                                                    <th>用户名</th>
+                                                    <th>手机号</th>
+                                                    <th>身份证号码</th>
+                                                    <th>地区</th>
+                                                    <th>注册时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="odd">
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab2">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered dataTable person-table-bordered user-table2" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>序号</th>
+                                                    <th>用户名</th>
+                                                    <th>手机号</th>
+                                                    <th>身份证号码</th>
+                                                    <th>职业</th>
+                                                    <th>地区</th>
+                                                    <th>注册时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="odd">
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab3">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered dataTable person-table-bordered user-table3" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>序号</th>
+                                                    <th>用户名</th>
+                                                    <th>手机号</th>
+                                                    <th>身份证号码</th>
+                                                    <th>店名</th>
+                                                    <th>行业类型</th>
+                                                    <th>地区</th>
+                                                    <th>注册时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="odd">
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Wrapper -->
+            <div class="page-footer">
+                <p class="no-s">Copyright &copy; 2016 - 2018 抢帮管理后台 版权归抢帮集团所有 </p>
+            </div>
+        </div>
+    </main>
+    <script src="http://localhost:8080/trunk/myplugins/util/util.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/datatables/js/jquery.datatables.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/datatables/js/jquery.datatables.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/datatables/js/dataTables.bootstrap.min.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/datatables/js/dataTables.fixedColumns.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/artdialog/js/dialog.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/handlebars/handlebars.min.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/select2/js/select2.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/validform/validform.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/datetimepicker/datetimepicker.js"></script>
+    <script src="http://localhost:8080/trunk/plugins/dropzone/dropzone.min.js"></script>
+    <!-- 弹框模板 -->
+    <script type="x-handlebars-template" id="dialog-tmpl">
+        <div class="my-dialog-left"><em class="my-dialog-icon icon-bounce"></em></div>
+        <div class="my-dialog-right">
+            <p class="my-dialog-strong">你确定要给  {{userName}}<span class="my-dialog-red">{{text}}</span>？</p>
+            
+        </div>
+    </script>
+   
+    <script>
+    var config = {
+        
+        showListUrl: 'http://127.0.0.1:3001',//获取用户详情
+        auditApproveUrl: 'http://127.0.0.1:3001',//审核认证
+        auditCashdepositUrl: 'http://127.0.0.1:3001',//审核保证金
+        openAccountUrl: 'http://127.0.0.1:3001',//开启账号
+        freezeAccountUrl: 'http://127.0.0.1:3001'//冻结账户
+       
+    }
+    </script>
+    <script src="http://localhost:8080/trunk/admin/js/commercialtenant/index.js"></script>
+</body>
+
+</html>

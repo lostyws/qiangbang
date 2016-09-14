@@ -1,0 +1,80 @@
+.step1 {
+    text-align: center
+}
+
+.step1 .title {
+    width: 160px;
+    margin: 30px 0 20px
+}
+
+.step1 p {
+    line-height: 25px;
+    color: #333;
+    font-size: 15px
+}
+
+.step1 .img1 {
+    width: 90%;
+    margin: 15px
+}
+
+.step2 {
+    text-align: center;
+    background: #fffdd9;
+    padding: 1px 10px
+}
+
+.step2 p {
+    text-align: left;
+    font-size: 14px;
+    margin: 15px 0
+}
+
+.step2 p .step-index {
+    background: #fa9632;
+    color: #fff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 5px
+}
+
+.step2 p .orange {
+    color: #ff640a
+}
+
+.step2 .img2-1 {
+    width: 60%;
+    margin: 20px
+}
+
+.step2 .img2-2 {
+    width: 60%
+}
+
+.step2 .img2-3 {
+    width: 90%
+}
+
+.step2 .img2-4 {
+    width: 60%;
+    margin-bottom: 20px
+}
+
+.step3 {
+    margin-top: 20px;
+    text-align: center
+}
+
+.step3 p {
+    line-height: 25px;
+    color: #333;
+    font-size: 15px
+}
+
+.step3 img {
+    width: 50%;
+    margin: 30px 0
+}

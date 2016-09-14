@@ -1,0 +1,16 @@
+.header-image {
+    width: 100%;
+    overflow: hidden
+}
+
+.header-image img {
+    max-width: 100%
+}
+
+.top-bar {
+    display: none
+}
+
+.mobile-page {
+    padding-top: 0
+}

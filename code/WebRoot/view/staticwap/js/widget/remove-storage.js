@@ -1,0 +1,1 @@
+define("remove-storage",["zepto"],function(e,o){var t=e("zepto");o.removeStorage=function(){var e=window.localStorage;t(".removestorageBtn").on("click",function(){e.removeItem(t(this).attr("data-nextPageStorageName"))})}});

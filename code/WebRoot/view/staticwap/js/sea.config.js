@@ -1,0 +1,61 @@
+window.ZBJInfo = {
+    newStaticLibURI: ''
+},
+
+seajs && seajs.config({
+    base: "./",
+    paths: {
+        components: "/view/staticwap/js/components",
+        gallery: "/view/staticwap/js/gallery",
+        arale: "/view/staticwap/js/arale"
+    },
+    alias: {
+        zepto: "/view/staticwap/js/vendor/zepto/1.1.4/zepto.js",
+        underscore: "/view/staticwap/js/vendor/underscore/1.7.0/underscore.js",
+        fastclick: "/view/staticwap/js/vendor/fastclick/1.0.3/fastclick.js",
+        hammer: "/view/staticwap/js/vendor/hammer/2.0.4/hammer.js",
+        audiojs: "/view/staticwap/js/vendor/audiojs/audio.min.js",
+        swipe: "/view/staticwap/js/vendor/swipe/2.0.0/swipe.js",
+        "swipe-3": "/view/staticwap/js/vendor/swipe/3.2.0/swiper.min.js",
+        sprintf: "/view/staticwap/js/vendor/sprintf/sprintf.js",
+        iscroll: "/view/staticwap/js/vendor/iscroll/5.1.3/iscroll.js",
+        "iscroll-lite": "/view/staticwap/js/vendor/iscroll/5.1.3/iscroll-lite.js",
+        juicer: "/view/staticwap/js/vendor/juicer/0.6.5/juicer.js",
+        "image-loader": "/view/staticwap/js/vendor/image-loader/0.0.1/image-loader.js",
+        blob: "/view/staticwap/js/vendor/blob/blob.js",
+        "add-need-model": "/view/staticwap/js/widget/add-need-model.js",
+        "bridge-data": "/view/staticwap/js/widget/bridge-data.js",
+        bridge: "/view/staticwap/js/widget/bridge.js",
+        common: "/view/staticwap/js/widget/common.js",
+        cookie: "/view/staticwap/js/widget/cookie.js",
+        "date-formatter": "/view/staticwap/js/widget/date-formatter.js",
+        jsonstrigefy: "/view/staticwap/js/widget/jsonstrigefy.js",
+        "layer.m": "/view/staticwap/js/widget/layer.m.js",
+        "local-storage": "/view/staticwap/js/widget/local-storage.js",
+        "login-register": "/view/staticwap/js/widget/login-register.js",
+        loginable: "/view/staticwap/js/widget/loginable.js",
+        "remove-storage": "/view/staticwap/js/widget/remove-storage.js",
+        "slide-video": "/view/staticwap/js/widget/slide-video.js",
+        "task-bottom": "/view/staticwap/js/widget/task-bottom.js",
+        "trust-bounty": "/view/staticwap/js/widget/trust-bounty.js",
+        "whole-interactive": "/view/staticwap/js/widget/whole-interactive.js",
+        "zepto.kslider": "/view/staticwap/js/widget/zepto.kslider.js",
+        "calling-download": "/view/staticwap/js/widget/calling-download.js",
+        "pic-view": "/view/staticwap/js/widget/pic-view.js",
+        "no-search-data-to-chance": "/view/staticwap/js/widget/no-search-data-to-chance.js",
+        "jump-to-app-service-detail": "/view/staticwap/js/widget/jump-to-app-service-detail.js",
+        "page-load": "/view/staticwap/js/widget/page-load.js",
+        "page-load-interest": "/view/staticwap/js/widget/page-load-interest.js",
+        "page-load-loadmore-limit": "/view/staticwap/js/widget/page-load-loadmore-limit.js",
+        "load-remote-data": "/view/staticwap/js/widget/load-remote-data.js",
+        weixin: "/view/staticwap/js/widget/weixin.js",
+        wx: "http://res.wx.qq.com/open/js/jweixin-1.0.0.js",
+        "opption-collection-checkbox": "/view/staticwap/js/widget/opption-collection/checkbox.js",
+        "refuse-payfor": "/view/staticwap/js/widget/confirm/refuse/payfor/payfor.js",
+        "user-operation": "/view/staticwap/js/page/need-detail/widget/user-operation.js",
+        '$': '/view/staticwap/js/jquery/1.11.1/jquery',
+    }
+}),
+"function" != typeof __uri && (window.__uri = function(t) {
+    return t
+});

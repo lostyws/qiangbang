@@ -1,0 +1,544 @@
+.money-span {
+  color: #ff9400;
+}
+.content {
+  background-color: #e6e6e6;
+  padding: 22px 0;
+}
+.content .form-grid {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 25px 42px;
+  width: 1014px;
+}
+.content-header {
+  background: url(../img/svr.gif) no-repeat;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 10px;
+  padding-left: 65px;
+  color: #999;
+}
+.content-header .tit {
+  font-size: 24px;
+  font-family: 'Microsoft YaHei';
+  padding: 5px 0 10px;
+  color: #333;
+  margin: 0;
+}
+.user-money {
+  color: #333;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+}
+.t5s.myzbj .cont {
+  margin-right: 217px;
+}
+.pay .user-moy {
+  padding-left: 65px;
+  margin-top: 20px;
+}
+.tit-wrap .tit {
+  float: left;
+}
+.tit-wrap .link-wrap {
+  font-size: 14px;
+  float: left;
+  padding: 0px 3px 0px 0px;
+}
+.tit-wrap .link-wrap a,
+.tit-wrap .link-wrap span {
+  font-family: 'microsoft yahei';
+}
+.tit-wrap .link-wrap .split {
+  font-size: 24px;
+  vertical-align: bottom;
+  padding-top: 5px;
+  font-weight: 300;
+}
+.tit-wrap .link-wrap .link-wrap-box {
+  display: inline-block;
+}
+.tit-wrap .link-wrap .link-wrap-box a {
+  margin-right: 5px;
+}
+.faq-grid {
+  color: #666666;
+  margin-top: 15px;
+}
+.faq-grid .faq-title {
+  font-size: 16px;
+  padding-left: 6px;
+}
+.faq-grid .faq-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 6px;
+}
+.faq-grid .faq-list li {
+  line-height: 2;
+}
+.faq-grid .faq-list .faq-q {
+  font-weight: bold;
+}
+.validate-form select {
+  height: 34px;
+  border-radius: 0;
+  width: 206px;
+}
+.ui-form-text {
+  font-size: 14px;
+}
+.validate-form .address-selector select {
+  width: 130px;
+}
+.ui-button-text {
+  padding: 11px 29px;
+}
+/*移除Input float*/
+.ui-form-item input {
+  float: none;
+  height: auto;
+  border-radius: 0;
+  padding: 7px 9px;
+  line-height: 18px;
+}
+.ui-form .cityAddress select {
+  margin-right: 5px;
+}
+.ui-form {
+  font: 12px/1.5 tahoma, arial, "Microsoft Yahei";
+  margin-top: 20px;
+}
+.ui-form-item-submit .ui-button-text {
+  padding: 5px 22px;
+}
+.addCard-tpl-dialog .ui-poptip-body {
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.poptipForm {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.poptipForm .ui-label {
+  width: 110px;
+  margin-left: -120px;
+}
+.poptipForm .ui-form-item {
+  padding-left: 110px;
+  padding-bottom: 10px;
+}
+.poptipForm .ui-form-item input {
+  padding: 5px 9px;
+  margin-bottom: 5px;
+}
+.poptipForm select {
+  height: 30px;
+}
+.poptipForm textarea {
+  margin-bottom: 0;
+}
+.poptipForm .address-selector select {
+  width: 130px;
+}
+.addCard-tpl-dialog .ui-pop-header {
+  padding: 5px 15px;
+}
+.addCard-tpl-dialog .ui-pop-footer {
+  padding: 8px 15px;
+}
+.ui-form-item-yuan {
+  font-weight: bold;
+}
+.ui-form .backtx {
+  width: 636px;
+  margin-left: 0;
+}
+.ui-form .backtx .action-group {
+  height: 27px;
+}
+.ui-form .backtx label {
+  margin-bottom: 0;
+}
+.ui-form .txian .backtx li {
+  border: 1px solid #ececec;
+  margin: 10px 10px 10px 0;
+  font-size: 18px;
+  border-radius: 3px;
+}
+.ui-form .txian .backtx li [type="radio"] {
+  margin: 3px 3px 0px 5px;
+}
+.ui-form .txian .backtx li u {
+  vertical-align: middle;
+  text-decoration: none;
+}
+.ui-form .txian .backtx .bank-hover:hover {
+  border-color: #90c1dc;
+  background-color: #F5F9FF;
+}
+.ui-form .txian .backtx .banks-add-card {
+  border: none;
+  margin-bottom: 5px;
+}
+.ui-form .txian .banks-add-card i {
+  margin-right: 5px;
+  color: #99D0EF;
+  font-size: 16px;
+}
+.ui-form .txian .banks-add-card i:hover {
+  color: #99D0EF;
+}
+.ui-form .txian .banks-add-card a {
+  line-height: 17px;
+  text-decoration: none;
+  font-size: 12px;
+}
+.ui-form .txian .backtx label {
+  padding: 10px;
+}
+.ui-form .txian .backtx .delete-back {
+  line-height: 27px;
+  margin-right: 6px;
+  font-size: 12px;
+}
+.ui-form-explain-like {
+  margin: 0;
+  padding: 8px 0 0;
+  font-size: 12px;
+  color: #B2B2B2;
+}
+.bank-hover .status-tip {
+  font-size: 12px;
+  font-family: 'simsun';
+  margin-right: 20px;
+}
+.showpop img {
+  vertical-align: bottom;
+}
+.ui-form-bankcard {
+  position: relative;
+}
+.ui-form-bankcard .bankcard-review {
+  _width: 185px;
+  min-width: 185px;
+  border: 1px solid #C5C5C5;
+  background: #fff;
+  position: absolute;
+  top: -42px;
+  margin: 2px 0 0;
+  display: none;
+}
+.ui-form-bankcard .bankcard-review .cardid-number {
+  font: 600 20px/30px tahoma, arial;
+  padding: 5px 5px 2px 5px;
+  white-space: nowrap;
+  color: #4d4d4d;
+  height: 30px;
+}
+.ui-form-bankcard.ui-form-item-focus .bankcard-review {
+  display: block;
+}
+.ui-form .ui-textarea {
+  width: 206px;
+  border-radius: 0;
+  border-color: #ccc;
+  resize: vertical;
+}
+.ui-doubleradio-item {
+  width: 125px;
+  float: left;
+  font-size: 14px;
+  padding: 4px 0;
+  vertical-align: middle;
+  line-height: 20px;
+  position: relative;
+  z-index: 10;
+}
+.ui-doubleradio-item input {
+  vertical-align: middle;
+  margin-top: 0;
+}
+.ui-doubleradio-item label {
+  padding-left: 2px;
+  position: relative;
+  top: 1px;
+  display: inline;
+}
+.upload-pic-btn {
+  display: block;
+  width: 100px;
+  height: 97px;
+  margin-bottom: 0px;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.upload-pic-btn input.ui-upload-btn {
+  width: 100%;
+  height: 130%;
+  font-size: 0;
+  font-size: 100px\9;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.upload-pic-btn .ui-upload-btn[disabled] {
+  width: 0;
+}
+.upload-id-back {
+  display: block;
+  width: 100px;
+  height: 97px;
+}
+.upload-wrap {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  color: #fff;
+  display: none;
+  top: 0;
+  text-align: center;
+  z-index: 7;
+}
+.upload-wrap a {
+  color: #fff;
+}
+.upload-wrap .delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 20px;
+  display: none;
+}
+.upload-wrap .upload-link {
+  line-height: 100px;
+  font-size: 14px;
+}
+.upload-wrap .delete:hover {
+  text-decoration: none;
+}
+.btn-pic-link {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 100px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border-bottom: 1px solid #ff9900;
+  z-index: 8;
+  outline: none;
+  display: none;
+}
+.btn-pic-link span {
+  display: inline-block;
+  color: #ff9900;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  background: #fff\9;
+  filter: alpha(opacity=80);
+  border: 1px solid #ff9900;
+  padding: 0 12px;
+  border-radius: 2px;
+}
+.btn-reupload {
+  position: absolute;
+  left: 0px;
+  top: 49px;
+  display: block;
+  width: 100px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  z-index: 8;
+  outline: none;
+  display: none;
+}
+.btn-reupload span {
+  display: inline-block;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  background: rgba(204, 153, 51, 0.8);
+  background: #ff9900\9;
+  filter: alpha(opacity=80);
+  padding: 0 12px;
+  border-radius: 2px;
+}
+.uploadfile-indicator {
+  height: 39px;
+  position: relative;
+  margin: 0px;
+  list-style: none;
+}
+.uploadfile-indicator li {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  margin: 5px 10px 0 0;
+  padding: 2px 10px 2px 5px;
+  float: left;
+}
+.uploadfile-indicator li.tsuc {
+  border: 1px solid #FACEA0;
+  background: #FFEABD;
+  border-radius: 20px;
+  position: relative;
+}
+.uploadfile-indicator li .file {
+  background: none;
+  padding-left: 0px;
+  padding-right: 5px;
+  float: left;
+}
+.uploadfile-indicator li .file a {
+  margin: 5px 0 0 10px;
+  position: absolute;
+  background: url("http://t5.zbjimg.com/r/p/close-hover.gif") no-repeat scroll 0 0 transparent;
+  width: 15px;
+  top: -10px;
+  right: -7px;
+  display: none;
+  height: 16px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+.uploadfile-indicator li.tsuc .file a {
+  *display: block;
+}
+.uploadfile-indicator li.tsuc:hover .file a {
+  display: block;
+  background: url("http://t5.zbjimg.com/r/p/pic.png") no-repeat scroll 2px 2px transparent;
+  width: 12px;
+  margin-right: 3px;
+}
+.uploadfile-indicator li.tsuc:hover .file a:hover {
+  background: url("http://t5.zbjimg.com/r/p/close-hover.jpg") no-repeat scroll 0 0 transparent;
+  width: 16px;
+  margin: 5px 0 0 0;
+}
+.uploadfile-indicator li .adding {
+  float: left;
+}
+.ui-window .uploadfile-indicator li .adding {
+  clear: left;
+}
+.uploadfile-indicator li .adding .adifile {
+  width: 210px;
+  height: 10px;
+  background: url(http://t5.zbjimg.com/r/p/progress.gif) repeat-x;
+  overflow: hidden;
+  margin: 8px 10px 0 0;
+  float: left;
+}
+.uploadfile-indicator li .adding .adifile span {
+  width: 50%;
+  height: 100%;
+  display: block;
+}
+.upload-pic-btn .ui-upload-btn[disabled] {
+  width: 0;
+  height: 0;
+}
+.uploadfile-indicator {
+  height: auto;
+}
+.orange {
+  color: #ff6600;
+}
+.fee-poptip {
+  font-size: 12px;
+}
+.fee-poptip .fee-poptip-div {
+  margin-bottom: 10px;
+}
+.fee-poptip tr {
+  font-size: 12px;
+}
+.fee-poptip td {
+  padding: 5px 10px;
+}
+.ui-pop-body .ui-dialog-alert {
+  margin-bottom: 20px;
+}
+.ui-pop-body .ui-dialog-alert p {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  border-radius: 4px 4px 4px 4px;
+  padding: 8px 5px 8px 5px;
+}
+.ui-pop-body a {
+  text-decoration: none;
+  outline: none;
+}
+.ui-pop-body .ui-dialog-modify {
+  color: #0b73bb;
+  margin-left: 10px;
+}
+.ui-pop-body .ui-dialog-modify:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+.ui-pop-body .ui-dialog-code {
+  width: 80px;
+  margin: 10px;
+}
+.ui-pop-body .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.ui-pop-body .send-btn {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.ui-pop-body .send-btn:hover {
+  color: #fff;
+  background-color: #449D44;
+  border-color: #398439;
+}
+.ui-pop-body .resend-btn {
+  background-color: #ededed;
+  border-color: #d2d2d2;
+  cursor: not-allowed;
+  color: #999;
+  filter: none;
+}
+.ui-tips {
+  z-index: 1005;
+}

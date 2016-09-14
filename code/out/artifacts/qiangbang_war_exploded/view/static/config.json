@@ -1,0 +1,32 @@
+{
+  "md5path" : "md5-map.json",
+  "dest" : "./dist/",
+  "js" : {
+    "src" : [
+      "**/*.js",
+      "!**/*.min.js",
+      "!plugins/**/*",
+      "!dist/**/*.js",
+      "!gulpfile.js",
+      "!node_modules/**/*.js",
+      "!tasks/**/*.js"
+    ]
+  },
+  "css" : {
+    "src" : [
+      "**/*.css",
+      "!plugins/**/*",
+      "!**/*.min.css",
+      "!dist/**/*.css",
+      "!node_modules/**/*.css"
+    ]
+  },
+  "img" : {
+    "src" : [
+      "**/*.{jpge,jpg,gif,png}",
+      "!plugins/**/*",
+      "!dist/**/*.{jpge,jpg,gif,png}",
+      "!node_modules/**/*.{jpge,jpg,gif,png}"
+    ]
+  }
+}

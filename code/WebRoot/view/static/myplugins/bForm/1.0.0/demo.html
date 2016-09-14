@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>select</title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="http://static.joyowo.com/public/global/dist/css/global/global.css">
+<link rel="stylesheet" type="text/css" href="http://static.joyowo.com/public/xm/dist/css/common/common.css">
+<link rel="stylesheet" type="text/css" href="http://static.joyowo.com/lib/my-cmd-plugins/bForm/1.0.0/bForm.css">
+<link rel="stylesheet" type="text/css" href="http://static.joyowo.com/lib/cmd-plugins/validForm/5.3.2/validform.css">
+
+
+<script type="text/javascript" src="http://devstatic.joyowo.com/lib/seajs/2.3.0/sea-debug.js"></script>
+<script type="text/javascript" src="http://devstatic.joyowo.com/lib/seajs-plugins/seajs-preload/1.0.0/seajs-preload.js"></script>
+<script type="text/javascript" src="http://devstatic.joyowo.com/public/global/config/seajs/seajs-config.js"></script>
+
+<script src="http://devstatic.joyowo.com/lib/jquery/1.11.1/jquery.js"></script>
+
+
+
+<div>
+<select class="js-select" w="400" data-footer='<span class="example">增加</span>'>
+	<option value="1">1</option>
+	<option value="2">1</option>
+	<option value="3">1</option>
+	<option value="4">4</option>
+	<option value="55">5</option>
+</select>
+</div>
+<div>
+<select disabled="" class="js-select a1" w="400">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="55">5</option>
+</select>
+阿萨德阿萨德
+</div>
+<div>
+	<select class="js-select a1" w="400" tip="请选择">
+		<option value="1">1</option>
+		<option selected="selected" value="2">2</option>
+		<option disabled="dddd" value="3">3</option>
+		<option value="4">4</option>
+		<option value="55">5</option>
+		<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	</select>
+</div>
+<form action="http://127.0.0.1:4001/" class="form">
+<div>
+	<select class="js-select a3" w="250" name="aa" defumsg="" nullmsg="" datatype="*">
+		<option value="">请选择</option>
+		<option disabled="" value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="55">55</option>
+	</select>
+</div>
+<button type="submit">提交测试</button>
+</form>
+
+<div class="js-radio-wrap">
+	<input class="js-radio" w="50" h="30" tip="是" addClass="a1 a2" checked="" value="是" type="radio" name="aa">
+	<input class="js-radio" disabled="" w="50" h="30" tip="否" addClass="a1" value="否" type="radio" name="aa">
+	<input class="js-radio" w="70" h="30" tip="不知道"  addClass="a1 a2 a3" value="不知道" type="radio" name="aa">
+	<input class="js-radio" w="70" h="30" tip="不知道"  addClass="a1 a2 a3" value="不知道1" type="radio" name="aa">
+	<input class="js-radio" w="70" h="30" tip="不知道"  addClass="a1 a2 a3" value="不知道1" type="radio" name="aa">
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="js-radio-wrap">
+	<input class="js-radio" w="50" h="30" tip="好" type="radio" name="bb">
+	<input class="js-radio" w="50" h="30" tip="不好" type="radio" name="bb">
+	<input class="js-radio" w="70" h="30" tip="非常好" checked="" type="radio" name="bb">
+</div>
+<div class="js-radio-wrap">
+	<input class="js-radio" disabled="" w="100" h="30" tip="十分满意" type="radio" name="cc">
+	<input class="js-radio" w="100" h="30" tip="八分满意" type="radio" name="cc">
+	<input class="js-radio" w="100" h="30" tip="七分满意" checked="checked" type="radio" name="cc">
+</div>
+
+<div class="js-checkbox-wrap">
+	<input class="js-checkbox" w="100" h="30" tip="选我" addClass="a2" type="checkbox">
+	<input class="js-checkbox" disabled="" w="200" h="30" tip="也可以选我" type="checkbox">
+	<input class="js-checkbox" w="100" h="30" tip="还有我" checked="checked" type="checkbox">
+</div>
+<div class="js-checkbox-wrap">
+	<input class="js-checkbox" w="100" h="30" tip="选我" type="checkbox">
+	<input class="js-checkbox" w="200" h="30" tip="也可以选我" type="checkbox">
+	<input class="js-checkbox" disabled="" w="100" h="30" tip="还有我" checked="checked" type="checkbox">
+</div>
+<div class="js-checkbox-wrap">
+	<input class="js-checkbox" w="100" h="30" tip="选我" type="checkbox">
+	<input class="js-checkbox" w="200" h="30" tip="也可以选我" type="checkbox">
+	<input class="js-checkbox" w="100" h="30" tip="还有我" checked="checked" type="checkbox">
+</div>
+<script type="text/javascript">
+	seajs.use(['{mycmd}/bForm/1.0.0/bForm'], function(bForm) {
+		new bForm().init();
+	})
+
+	//和插件结合
+	seajs.use(['{mycmd}/bForm/1.0.0/bForm', '{cmd}/validForm/5.3.2/validform'], function(bForm) {
+		new bForm().init();
+		$('.form').Validform({
+			tiptype: 4,
+			ignoreHidden: true
+		});
+	})
+</script>
+</body>
+</html>

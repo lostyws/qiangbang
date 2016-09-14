@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <title>分类管理</title>
+    <!-- Styles -->
+    <link href="http://localhost:8080/static/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet">
+    <link href="http://localhost:8080/static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/static/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/static/plugins/line-icons/simple-line-icons.css" rel="stylesheet">
+    <!-- Theme Styles -->
+    <link href="http://localhost:8080/static/public/css/modern.min.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8080/static/public/css/green.css" class="theme-color" rel="stylesheet" type="text/css">
+    <!-- Common Style -->
+    <link href="http://localhost:8080/static/admin/css/common/common.css" rel="stylesheet" type="text/css">
+    <!-- Scripts -->
+    <script src="http://localhost:8080/static/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="http://localhost:8080/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Global Script-->
+    <script src="http://localhost:8080/static/public/js/global.js"></script>
+    
+    
+    <!--<![endif]-->
+</head>
+<link rel="stylesheet" href="http://localhost:8080/static/myplugins/util/util.css">
+<link rel="stylesheet" href="http://localhost:8080/static/plugins/jstree/themes/default/style.min.css">
+
+<link rel="stylesheet" href="http://localhost:8080/static/plugins/artdialog/css/ui-dialog.css">
+<link rel="stylesheet" href="http://localhost:8080/static/admin/css/commercialtenant/index.css">
+
+
+
+<body>
+    <main class="page-content content-wrap">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="sidebar-pusher">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="logo-box">
+                    <a href="/tianwu/index.html" class="logo-text"><span>抢帮</span></a>
+                </div>
+                <div class="search-button">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                </div>
+                <div class="topmenu-outer">
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
+                                    <span class="user-name">管理员<i class="fa fa-angle-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-list" role="menu">
+                                    <li role="presentation"><a target="_blank" href="#"><i class="fa fa-gear"></i>修改密码</a></li>
+                                    <li role="presentation"><a href="/tianwu/j_spring_cas_security_logout"><i class="fa fa-sign-out m-r-xs"></i>安全退出</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/tianwu/j_spring_cas_security_logout" class="log-out waves-effect waves-button waves-classic">
+                                    <span><i class="fa fa-sign-out m-r-xs"></i>安全退出</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-sidebar sidebar">
+            <div class="page-sidebar-inner slimscroll" style="overflow: hidden; width: auto; height: 100%;">
+                <ul class="menu accordion-menu">
+                     <li class="active">
+                        <a href="/static/admin/html/classifymanagement/index.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-th-list"></span>
+                            <p>分类管理</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="/static/admin/html/commercial/index.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-tags"></span>
+                            <p>客户管理</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="/static/admin/html/ordermanagement/index.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-list-alt"></span>
+                            <p>订单管理</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="profile.html" class="waves-effect waves-button">
+                            <span class="menu-icon glyphicon glyphicon-briefcase"></span>
+                            <p>账户明细</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(function() {
+            var url = window.location.href;
+            url = url.replace("http://", "");
+            if (url.indexOf("?") > 1) {
+                url = url.substr(0, url.indexOf("?"))
+            }
+            url = url.substring(url.indexOf("/"), url.length);
+            $(".accordion-menu li a").each(function() {
+                if (url == $(this).attr("href")) {
+                    $(this).parents(".sub-menu").show();
+                    $(this).parents(".droplink").addClass("open");
+                    $(this).parent().addClass("active");
+                }
+            })
+        })
+        </script>
+        <!-- Page Sidebar -->
+        <div class="page-inner">
+            
+            <div class="page-title">
+                    <h3>分类管理</h3>
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">主页</a></li>
+                            
+                        </ol>
+                    </div>
+                </div>
+            <div id="main-wrapper" class="organization">
+                <div class="panel panel-white">
+                   
+                    <div class="panel-body">
+            <div class="init-wrap">
+                <div class="init-bg-wrap">
+                    <span class="tips">亲，从这里可以开始新增分类哦！</span>
+                    <button class="btn btn-add btn-init">新增分类</button>
+                </div>
+                <i class="org-icon icon-bounce"></i>
+            </div>
+            <div class="init-save-wrap">
+                <div class="col-xs-8">
+                    <div class="input-group">
+                        <input type="text" class="form-control root-name"> <span class="input-group-btn">
+                        <button class="btn btn-add btn-save" type="button">保存</button></span>
+                    </div>
+                </div>
+                <button class="btn btn-default btn-cancel col-xs-2" type="button">取消</button>
+            </div>
+            <div id="mytree" class="org-tree jstree jstree-1 jstree-default" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="1" aria-busy="false">
+                <ul class="jstree-container-ul jstree-children" role="group"></ul></div>
+            </div>
+                </div>
+            </div>
+            <!-- Main Wrapper -->
+            <div class="page-footer">
+                <p class="no-s">Copyright &copy; 2016 - 2018 抢帮管理后台 版权归抢帮集团所有 </p>
+            </div>
+        </div>
+    </main>
+    <script src="http://localhost:8080/static/myplugins/util/util.js"></script>
+    <script src="http://localhost:8080/static/plugins/artdialog/js/dialog.js"></script>
+    <script src="http://localhost:8080/static/plugins/handlebars/handlebars.min.js"></script>
+
+    <script src="http://localhost:8080/static/plugins/jstree/jstree.js"></script>
+    
+
+    <!-- 弹框模板 -->
+    <script type="text/html" id="jstree-editable-tpl">
+        <ul class="jstree-editable">
+            <li class="add"><i class="icon icon-plus"></i>新增</li>
+            <li class="edit"><i class="icon fa fa-edit"></i>编辑</li>
+            <li class="del"><i class="icon glyphicon glyphicon-trash"></i>删除</li>
+        </ul>
+    </script>
+   
+    <script>
+    var config = {
+        
+        orgUrl: 'http://127.0.0.1:3006',//分类详情
+        nodeUrl: 'http://127.0.0.1:3006', //创建
+        updateNode: 'http://127.0.0.1:3006', //更新
+        deleteNode: 'http://127.0.0.1:3006' //删除
+        
+      
+       
+    }
+    
+    </script>
+    <script src="http://localhost:8080/static/admin/js/classifymanagement/index.js"></script>
+</body>
+
+</html>

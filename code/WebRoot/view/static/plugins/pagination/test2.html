@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title></title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="pagination.css">
+<div class="con">
+
+</div>
+<div id="pagination">
+</div>
+</body>
+<script type="text/javascript" src="../../jquery/1.11.1/jquery.js"></script>
+<script type="text/javascript" src="jquery.pagination.js"></script>
+<script type="text/javascript">
+
+var tag = true;
+function ajax(page_index){
+  if(!tag) return;
+  console.log(page_index);
+  $.ajax({
+    url: 'http://127.0.0.1:3000/',
+    data: {
+      page_size: 20,
+      current_page : page_index || 0
+    },
+    dataType:'jsonp',
+    success: function(data){
+
+    }
+  }).done(function(data){
+
+    set_html(data);
+    tag = true
+  });
+
+};
+
+function set_html(data) {
+  var str='',
+      list = data.data;
+  for(var i = 0, l = list.length; i < l; i++) {
+    str+= '<span>' + i + '</span>&nbsp;';
+  }
+  $('.con').html(str);
+}
+
+
+function init_pagination(data){
+
+  tag = false;
+  $('#pagination').pagination(200, {
+    'items_per_page':  1,
+    'num_display_entries': 3,
+    'num_edge_entries': 2,
+    'prev_text': '上一页',
+    'next_text': '下一页'
+  });
+
+}
+
+init_pagination();
+// $('#pagination').pagination(200, {
+//   'num_display_entries': 5,
+//   'num_edge_entries': 2,
+//   'prev_text': '上一页',
+//   'next_text': '下一页',
+//   'callback': alert2
+// });
+// function alert2(){
+
+// }
+</script>
+</html>

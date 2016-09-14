@@ -1,0 +1,276 @@
+body {
+    background: #ff323b
+}
+
+.weekend-wrap {
+    background: #fee63e;
+    font-family: "微软雅黑"
+}
+
+.list-title {
+    height: 40px;
+    background: #ff5a52;
+    position: relative;
+    text-align: center
+}
+
+.list-title div {
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+    color: #fefefe;
+    font: 700 16px/40px "微软雅黑"
+}
+
+.list-title div img {
+    width: 50px;
+    height: 40px
+}
+
+.list-title .left {
+    width: 50px
+}
+
+.list-title .right {
+    width: 50px
+}
+
+.list-title .center {
+    padding: 0 10px
+}
+
+.count-down {
+    height: 42px;
+    color: #d3861c;
+    font-size: 13px;
+    position: relative
+}
+
+.count-down .count-true {
+    width: 220px;
+    position: absolute;
+    height: 24px;
+    left: 50%;
+    top: 9px;
+    margin-left: -85px;
+    line-height: 24px;
+    display: none
+}
+
+.count-down .count-true span {
+    float: left
+}
+
+.count-down .count-true strong {
+    float: left;
+    background: #ff6d8c;
+    color: #fff;
+    padding: 0 4px;
+    margin: 0 4px
+}
+
+.count-down .count-false {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    height: 24px;
+    top: 9px;
+    display: none
+}
+
+.super-buying ul li {
+    width: 47%;
+    float: left;
+    overflow: hidden;
+    position: relative
+}
+
+.block-item-parent ul li,
+.super-buying ul li {
+    width: 47%;
+    margin-left: 2%;
+    margin-bottom: 11px;
+    float: left;
+    background: #fff
+}
+
+.block-item-parent ul li .img,
+.super-buying ul li .img {
+    margin: 5%;
+    padding-top: 90%;
+    position: relative
+}
+
+.block-item-parent ul li .img img,
+.super-buying ul li .img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.block-item-parent ul li span,
+.super-buying ul li span {
+    display: block;
+    line-height: 18px;
+    height: 36px;
+    margin: 0 13px 10px;
+    font-size: 12px;
+    color: #484848;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.block-item-parent ul li .clearfix,
+.super-buying ul li .clearfix {
+    height: 24px;
+    overflow: hidden;
+    margin: 0 13px 10px
+}
+
+.block-item-parent ul li .clearfix .money,
+.super-buying ul li .clearfix .money {
+    float: left;
+    font: 700 14px/24px "微软雅黑";
+    color: #ff3c3c;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 24px;
+    overflow: hidden
+}
+
+.block-item-parent ul li .clearfix .save,
+.super-buying ul li .clearfix .save {
+    float: right;
+    font: 9px/24px "微软雅黑";
+    color: #9c9c9c
+}
+
+.block-item-parent ul li .clearfix .save b,
+.super-buying ul li .clearfix .save b {
+    color: #ff3c3c
+}
+
+.excellent-title {
+    text-align: center;
+    height: 30px;
+    font: 700 12px/30px "微软雅黑";
+    color: #fa9900
+}
+
+.m13 {
+    margin: 0 13px
+}
+
+.shop-layer {
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    bottom: 0;
+    background: #9a9a9a;
+    opacity: .3;
+    filter: alpha(opacity=70);
+    z-index: 1
+}
+
+.shop-layer-content {
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    bottom: 0;
+    z-index: 2
+}
+
+.shop-layer-content samp {
+    border: 0;
+    display: block;
+    float: left;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 0 3px;
+    margin-left: 8px;
+    margin-top: 4px;
+    margin-right: 0
+}
+
+.shop-layer-content i {
+    display: block;
+    float: left;
+    margin-left: 4px;
+    margin-top: 3px
+}
+
+.shop-name {
+    font: 700 12px/26px "微软雅黑";
+    color: #484848;
+    height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical
+}
+
+.shop-area {
+    font-size: 10px;
+    color: #9c9c9c
+}
+
+.shop-area b {
+    color: #ff3c3c
+}
+
+.shop-button {
+    margin: 7px 13px 11px;
+    height: 28px;
+    font: 700 12px/30px "微软雅黑";
+    color: #fff;
+    background: #ff6900;
+    border-radius: 5px;
+    text-align: center
+}
+
+.header-image {
+    background: #f83035;
+    width: 100%;
+    overflow: hidden
+}
+
+.header-image img {
+    max-width: 100%
+}
+
+.search-list li .img {
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    float: none
+}
+
+.search-list li {
+    padding: 0;
+    border-bottom: 0
+}
+
+.service-tab {
+    margin-top: 0
+}
+
+.tab-index {
+    position: relative
+}
+
+.medal-level.medal-t {
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
+    background: url("../../../../image/page/search/medals-t-icon.png")/*tpa=/view/staticwap/image/page/search/medals-t-icon.png*/
+    #fff 0 0 no-repeat;
+    background-size: 16px 16px
+}

@@ -1,0 +1,149 @@
+.content-wrap {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #22baa0; 
+}
+.content-wrap .panel-title {
+    padding-top: 7px !important;
+    font-size: 18px !important;
+    color: #22baa0;
+    font-weight: 700;
+}
+.panel .panel-heading {
+    height: auto;
+    margin-bottom: 15px;
+    overflow: visible;
+}
+.search-group {
+    text-align: right;
+    float: right;
+}
+.panel .panel-tab {
+	padding: 0px;
+}
+/* Tabs */
+.panel-tab .nav-tabs {
+    border-bottom: 1px solid #22baa0;
+}
+.panel-tab .nav-tabs>li {
+    text-align: center;
+    padding: 0px;
+}
+.panel-tab .nav-tabs > li > a {
+    border-bottom: 1px solid #22baa0;
+    font-size: 16px;
+}
+.panel-tab .nav-tabs>li.active>a,.panel-tab .nav-tabs>li.active>a:focus,.panel-tab .nav-tabs>li.active>a:hover {
+    border: 1px solid #22baa0;
+    border-bottom-color: transparent;
+    font-weight: 700;
+}
+.panel-tab li.tab-operate {
+	padding-top: 5px;
+}
+.panel-tab .batch-operate {
+	text-align: right;
+	padding-top: 10px;
+}
+.panel-tab span.operate {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.panel-tab .nav-tabs .dropdown-menu {
+    margin-top: 10px;
+}
+.panel-tab .input-group-addon {
+    background:#22baa0;
+    border-color:#22baa0;
+}
+.panel-tab .glyphicon-search {
+    color: #fff;
+}
+.my-nav-tabs>li {
+    margin-top: 10px;
+    text-align: center;
+}
+.my-nav-tabs > li > a {
+    color: #666;
+}
+.my-nav-tabs>li.active>a {
+    background-color: #90dccf;
+    font-weight: 700;
+}
+/* Table */
+.table>thead>tr>th, .table td, .table>tbody>tr>td {
+    text-align: center;
+}
+.dropdown-list {
+    min-width: 80px;
+}
+.dropdown-list li a {
+    text-align: center;
+}
+.table tr.selected{
+    background-color: red;
+}
+/*dialog*/
+.my-dialog-content {
+    width: 620px;
+}
+/*.my-dialog-content .form-group {
+    margin-bottom: 0px;
+}*/
+.my-dialog-wrap {
+    padding-top: 26px;
+}
+
+.my-dialog-left {
+    margin-right: 10px;
+}
+.my-dialog-left,.my-dialog-right {
+    float: left;
+}
+.my-dialog-icon {
+    width: 70px;
+    height: 70px;
+    background: url('/tianwu/images/icon/dialog-confirm.png');
+    display: block;
+    
+}
+.my-dialog-strong {
+    font-weight: 700;
+    font-size: 16px;
+}
+.my-dialog-strong .select-shift {
+    font-weight: 400;
+    font-size: 14px;
+    width: 150px;
+}
+.my-dialog-gray {
+    color: #999;
+}
+.my-dialog-red {
+    color: #f25656;
+}
+.dialog-info {
+    width: 450px;
+}
+.dialog-info .form-group {
+    margin-right: 0px;
+
+}
+.file-data .form-group {
+    margin-top: 20px;
+}
+.file-data .control-label {
+    line-height: 150px;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
